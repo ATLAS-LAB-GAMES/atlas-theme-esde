@@ -1,0 +1,6 @@
+<theme>
+  <!-- Primary target: RG476H and the supplied 4:3 concept art. -->
+  <view name="system">
+    <carousel name="systemcarousel"><size>0.968 0.145</size><maxItemCount>7</maxItemCount><itemSize>0.119 0.104</itemSize><itemScale>1.045</itemScale></carousel>
+  </view>
+</theme>

@@ -1,0 +1,442 @@
+<theme>
+  <view name="gamelist">
+    <video name="game-video">
+      <origin>0 0</origin>
+      <pos>0.355 0.000</pos>
+      <cropSize>0.645 0.570</cropSize>
+      <cropPos>0.50 0.50</cropPos>
+      <imageType>fanart,screenshot</imageType>
+      <delay>1.4</delay>
+      <audio>true</audio>
+      <scrollFadeIn>true</scrollFadeIn>
+      <zIndex>1</zIndex>
+      <size>0.645 0.570</size>
+    </video>
+    <image name="atlas-background-game">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>${atlasGamelistBackground}</path>
+      <zIndex>5</zIndex>
+    </image>
+    <image name="game-system-hero-base">
+      <origin>0 0</origin>
+      <pos>-0.055 -0.055</pos>
+      <size>1.14 1.14</size>
+      <cropSize>1 1</cropSize>
+      <cropPos>0.54 0.46</cropPos>
+      <default>./_inc/systems/artwork (modern)/_default.webp</default>
+      <path>./_inc/systems/artwork (modern)/${system.theme}.webp</path>
+      <opacity>0</opacity>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="game-system-hero-atlas">
+      <origin>0 0</origin>
+      <pos>-0.055 -0.055</pos>
+      <size>1.14 1.14</size>
+      <cropSize>1 1</cropSize>
+      <cropPos>0.50 0.46</cropPos>
+      <path>./_inc/systems/artwork (atlas)/${atlasVariantFolder}/${system.theme}.webp</path>
+      <opacity>0</opacity>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="game-emerald-bloom">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./_inc/atlas/ui/system-emerald-glow.png</path>
+      <color>00000000</color>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="game-left-fade">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./_inc/atlas/ui/system-left-fade.png</path>
+      <color>00000000</color>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="game-bottom-fade">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./_inc/atlas/ui/system-bottom-fade.png</path>
+      <color>00000000</color>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="game-vignette-full">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./_inc/atlas/ui/system-vignette.png</path>
+      <color>00000000</color>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="game-media-vignette">
+      <origin>0 0</origin>
+      <pos>0.355 0.055</pos>
+      <size>0.645 0.515</size>
+      <path>./_inc/atlas/ui/game-media-vignette.png</path>
+      <color>00000000</color>
+      <zIndex>6</zIndex>
+    </image>
+    <image name="game-panel">
+      <origin>0 0</origin>
+      <pos>0.026 0.016</pos>
+      <size>0.381 0.494</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${panelSoftColor}</color>
+      <cornerRadius>0.013</cornerRadius>
+      <zIndex>8</zIndex>
+    </image>
+    <image name="atlas-game-brand">
+      <origin>0.5 0.5</origin>
+      <pos>0.063 0.094</pos>
+      <maxSize>0.060 0.060</maxSize>
+      <path>./_inc/atlas/branding/atlas-emblem.png</path>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="game-system-title-image">
+      <origin>0 0.5</origin>
+      <pos>0.109 0.094</pos>
+      <maxSize>0.292 0.055</maxSize>
+      <default>./_inc/systems/titles/_default.png</default>
+      <path>./_inc/systems/titles/${system.theme}.png</path>
+      <zIndex>10</zIndex>
+    </image>
+    <text name="game-system-name">
+      <origin>0 0.5</origin>
+      <pos>0.174 0.098</pos>
+      <size>0.001 0.001</size>
+      <metadata>systemFullname</metadata>
+      <defaultValue>:space:</defaultValue>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.001</fontSize>
+      <letterCase>uppercase</letterCase>
+      <color>00000000</color>
+      <zIndex>10</zIndex>
+    </text>
+    <text name="game-name">
+      <origin>0 0</origin>
+      <pos>0.043 0.138</pos>
+      <size>0.347 0.070</size>
+      <metadata>name</metadata>
+      <systemNameSuffix>false</systemNameSuffix>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.039</fontSize>
+      <lineSpacing>1.03</lineSpacing>
+      <letterCase>uppercase</letterCase>
+      <color>${titleColor}</color>
+      <zIndex>10</zIndex>
+    </text>
+    <text name="game-description">
+      <origin>0 0</origin>
+      <pos>0.043 0.265</pos>
+      <size>0.345 0.140</size>
+      <metadata>description</metadata>
+      <container>true</container>
+      <fontPath>${fontRegular}</fontPath>
+      <fontSize>0.0168</fontSize>
+      <lineSpacing>1.14</lineSpacing>
+      <color>${bodyTextColor}</color>
+      <zIndex>10</zIndex>
+    </text>
+    <text name="game-meta">
+      <origin>0 0.5</origin>
+      <pos>0.043 0.422</pos>
+      <size>0.345 0.020</size>
+      <metadata>genre</metadata>
+      <defaultValue>:space:</defaultValue>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0145</fontSize>
+      <letterCase>uppercase</letterCase>
+      <color>${mutedTextColor}</color>
+      <zIndex>10</zIndex>
+    </text>
+    <image name="meta-playtime-bottom-icon">
+      <origin>0 0.5</origin>
+      <pos>0.043 0.468</pos>
+      <size>0.019 0.019</size>
+      <path>./_inc/atlas/ui/metadata-icons/playtime.svg</path>
+      <color>${mutedTextColor}</color>
+      <zIndex>11</zIndex>
+    </image>
+    <text name="meta-playtime-value">
+      <origin>0 0.5</origin>
+      <pos>0.069 0.468</pos>
+      <size>0.070 0.020</size>
+      <metadata>playtime</metadata>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0132</fontSize>
+      <horizontalAlignment>left</horizontalAlignment>
+      <color>${accentColor}</color>
+      <zIndex>12</zIndex>
+    </text>
+    <image name="meta-favorite-off">
+      <origin>0 0.5</origin>
+      <pos>0.043 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/metadata-icons/favorite.svg</path>
+      <color>${badgeInactiveColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="meta-playtime-off">
+      <origin>0 0.5</origin>
+      <pos>0.081 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/metadata-icons/playtime.svg</path>
+      <color>${badgeInactiveColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="meta-completed-off">
+      <origin>0 0.5</origin>
+      <pos>0.119 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/metadata-icons/completed.svg</path>
+      <color>${badgeInactiveColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="meta-achievements-off">
+      <origin>0 0.5</origin>
+      <pos>0.157 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/metadata-icons/achievements.svg</path>
+      <color>${badgeInactiveColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="meta-manual-off">
+      <origin>0 0.5</origin>
+      <pos>0.195 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/metadata-icons/manual.svg</path>
+      <color>${badgeInactiveColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="meta-rating-off">
+      <origin>0 0.5</origin>
+      <pos>0.233 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/metadata-icons/rating.svg</path>
+      <color>${badgeInactiveColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="meta-verified-default">
+      <origin>0 0.5</origin>
+      <pos>0.271 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/metadata-icons/verified.svg</path>
+      <color>${accentColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>11</zIndex>
+    </image>
+    <badges name="meta-favorite-on">
+      <origin>0 0.5</origin>
+      <pos>0.043 0.230</pos>
+      <size>0.027 0.027</size>
+      <direction>row</direction>
+      <lines>1</lines>
+      <itemsPerLine>1</itemsPerLine>
+      <slots>favorite</slots>
+      <customBadgeIcon badge="favorite">./_inc/atlas/ui/metadata-icons/favorite.svg</customBadgeIcon>
+      <badgeIconColor>${accentColor}</badgeIconColor>
+      <zIndex>12</zIndex>
+    </badges>
+    <badges name="meta-completed-on">
+      <origin>0 0.5</origin>
+      <pos>0.119 0.230</pos>
+      <size>0.027 0.027</size>
+      <direction>row</direction>
+      <lines>1</lines>
+      <itemsPerLine>1</itemsPerLine>
+      <slots>completed</slots>
+      <customBadgeIcon badge="completed">./_inc/atlas/ui/metadata-icons/completed.svg</customBadgeIcon>
+      <badgeIconColor>${accentColor}</badgeIconColor>
+      <zIndex>12</zIndex>
+    </badges>
+    <badges name="meta-manual-on">
+      <origin>0 0.5</origin>
+      <pos>0.195 0.230</pos>
+      <size>0.027 0.027</size>
+      <direction>row</direction>
+      <lines>1</lines>
+      <itemsPerLine>1</itemsPerLine>
+      <slots>manual</slots>
+      <customBadgeIcon badge="manual">./_inc/atlas/ui/metadata-icons/manual.svg</customBadgeIcon>
+      <badgeIconColor>${accentColor}</badgeIconColor>
+      <zIndex>12</zIndex>
+    </badges>
+    <rating name="meta-rating-on">
+      <origin>0 0.5</origin>
+      <pos>0.266 0.468</pos>
+      <size>0 0.023</size>
+      <hideIfZero>true</hideIfZero>
+      <filledPath>./_inc/atlas/ui/metadata-icons/rating-filled.svg</filledPath>
+      <unfilledPath>./_inc/atlas/ui/metadata-icons/rating-unfilled.svg</unfilledPath>
+      <color>${accentColor}</color>
+      <zIndex>12</zIndex>
+    </rating>
+    <badges name="meta-playable-icon">
+      <origin>0 0.5</origin>
+      <pos>0.271 0.230</pos>
+      <size>0.027 0.027</size>
+      <direction>row</direction>
+      <lines>1</lines>
+      <itemsPerLine>1</itemsPerLine>
+      <slots>kidgame</slots>
+      <customBadgeIcon badge="kidgame">./_inc/atlas/ui/metadata-icons/verified.svg</customBadgeIcon>
+      <badgeIconColor>FFC53DFF</badgeIconColor>
+      <zIndex>13</zIndex>
+    </badges>
+    <badges name="meta-broken-icon">
+      <origin>0 0.5</origin>
+      <pos>0.271 0.230</pos>
+      <size>0.027 0.027</size>
+      <direction>row</direction>
+      <lines>1</lines>
+      <itemsPerLine>1</itemsPerLine>
+      <slots>broken</slots>
+      <customBadgeIcon badge="broken">./_inc/atlas/ui/metadata-icons/broken.png</customBadgeIcon>
+      <badgeIconColor>FFFFFFFF</badgeIconColor>
+      <zIndex>14</zIndex>
+    </badges>
+    <image name="meta-verified-status">
+      <origin>0 0.5</origin>
+      <pos>0.145 0.468</pos>
+      <size>0.108 0.032</size>
+      <path>./_inc/atlas/ui/metadata-icons/verified-status.png</path>
+      <metadataElement>true</metadataElement>
+      <zIndex>12</zIndex>
+    </image>
+    <badges name="meta-playable-status">
+      <origin>0 0.5</origin>
+      <pos>0.145 0.468</pos>
+      <size>0.108 0.032</size>
+      <direction>row</direction>
+      <lines>1</lines>
+      <itemsPerLine>1</itemsPerLine>
+      <slots>kidgame</slots>
+      <customBadgeIcon badge="kidgame">./_inc/atlas/ui/metadata-icons/playable-status.png</customBadgeIcon>
+      <badgeIconColor>FFFFFFFF</badgeIconColor>
+      <zIndex>14</zIndex>
+    </badges>
+    <badges name="meta-broken-status">
+      <origin>0 0.5</origin>
+      <pos>0.145 0.468</pos>
+      <size>0.108 0.032</size>
+      <direction>row</direction>
+      <lines>1</lines>
+      <itemsPerLine>1</itemsPerLine>
+      <slots>broken</slots>
+      <customBadgeIcon badge="broken">./_inc/atlas/ui/metadata-icons/broken-status.png</customBadgeIcon>
+      <badgeIconColor>FFFFFFFF</badgeIconColor>
+      <zIndex>16</zIndex>
+    </badges>
+    <image name="meta-achievements-on">
+      <origin>0 0.5</origin>
+      <pos>0.157 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/transparent.png</path>
+      <gameOverridePath>./_inc/atlas/metadata-overrides/achievements</gameOverridePath>
+      <color>${accentColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>12</zIndex>
+    </image>
+    <carousel name="game-carousel">
+      <origin>0 0</origin>
+      <pos>0 0.505</pos>
+      <size>1 0.410</size>
+      <type>horizontal</type>
+      <itemSize>0.180 0.300</itemSize>
+      <itemScale>1.10</itemScale>
+      <maxItemCount>5.3</maxItemCount>
+      <imageType>3dbox</imageType>
+      <imageFit>contain</imageFit>
+      <itemVerticalAlignment>center</itemVerticalAlignment>
+      <selectedItemMargins>0.018 0.018</selectedItemMargins>
+      <unfocusedItemOpacity>${unfocusedOpacity}</unfocusedItemOpacity>
+      <unfocusedItemSaturation>${unfocusedSaturation}</unfocusedItemSaturation>
+      <fastScrolling>true</fastScrolling>
+      <color>00000000</color>
+      <textColor>${mutedTextColor}</textColor>
+      <textSelectedColor>${titleColor}</textSelectedColor>
+      <textBackgroundColor>${cardFillColor}</textBackgroundColor>
+      <textSelectedBackgroundColor>${cardFillColor}</textSelectedBackgroundColor>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.020</fontSize>
+      <textRelativeScale>0.80</textRelativeScale>
+      <zIndex>20</zIndex>
+    </carousel>
+    <systemstatus name="game-system-status">
+      <origin>1 0.5</origin>
+      <pos>0.905 0.034</pos>
+      <height>0.021</height>
+      <fontPath>${fontDisplay}</fontPath>
+      <textRelativeScale>0.82</textRelativeScale>
+      <entrySpacing>0.006</entrySpacing>
+      <color>${headerTextColor}</color>
+    </systemstatus>
+    <clock name="game-clock">
+      <origin>1 0.5</origin>
+      <pos>0.960 0.034</pos>
+      <fontSize>0.019</fontSize>
+      <fontPath>${fontDisplay}</fontPath>
+      <color>${headerTextColor}</color>
+    </clock>
+    <image name="game-footer">
+      <origin>0 0</origin>
+      <pos>0 0.925</pos>
+      <size>1 0.075</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${footerColor}</color>
+      <zIndex>30</zIndex>
+    </image>
+    <image name="game-footer-line">
+      <origin>0 0</origin>
+      <pos>0 0.925</pos>
+      <size>1 0.0013</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${footerLineColor}</color>
+      <zIndex>31</zIndex>
+    </image>
+    <helpsystem name="help">
+      <origin>0 0.5</origin>
+      <pos>0.070 0.962</pos>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0190</fontSize>
+      <entryRelativeScale>0.86</entryRelativeScale>
+      <entrySpacing>0.027</entrySpacing>
+      <iconTextSpacing>0.008</iconTextSpacing>
+      <letterCase>uppercase</letterCase>
+      <iconColor>${accentColor}</iconColor>
+      <textColor>${helpTextColor}</textColor>
+      <originDimmed>0.5 0.5</originDimmed>
+      <posDimmed>0.5 0.962</posDimmed>
+      <iconColorDimmed>${accentColor}</iconColorDimmed>
+      <textColorDimmed>${helpTextColor}</textColorDimmed>
+    </helpsystem>
+    <image name="game-footer-gamepad">
+      <origin>1 0.5</origin>
+      <pos>0.825 0.962</pos>
+      <size>0.0225 0.0225</size>
+      <path>./_inc/atlas/ui/stat-games.svg</path>
+      <color>${accentColor}</color>
+      <zIndex>32</zIndex>
+    </image>
+    <gamelistinfo name="game-footer-info">
+      <origin>1 0.5</origin>
+      <pos>0.991 0.962</pos>
+      <size>0.150 0.026</size>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0172</fontSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${accentColor}</color>
+      <zIndex>32</zIndex>
+    </gamelistinfo>
+  </view>
+</theme>

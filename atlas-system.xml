@@ -1,0 +1,459 @@
+<theme>
+  <view name="system">
+    <image name="atlas-background">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>${atlasBackground}</path>
+      <zIndex>0</zIndex>
+    </image>
+    <image name="system-hero-base">
+      <origin>0 0</origin>
+      <pos>-0.055 -0.055</pos>
+      <size>1.14 1.14</size>
+      <cropSize>1 1</cropSize>
+      <cropPos>0.54 0.46</cropPos>
+      <default>./_inc/systems/artwork (modern)/_default.webp</default>
+      <path>./_inc/systems/artwork (modern)/${system.theme}.webp</path>
+      <opacity>${heroOpacity}</opacity>
+      <saturation>${heroSaturation}</saturation>
+      <brightness>${heroBrightness}</brightness>
+      <zIndex>1</zIndex>
+    </image>
+    <image name="system-hero-atlas">
+      <origin>0 0</origin>
+      <pos>-0.055 -0.055</pos>
+      <size>1.14 1.14</size>
+      <cropSize>1 1</cropSize>
+      <cropPos>0.50 0.46</cropPos>
+      <path>./_inc/systems/artwork (atlas)/${atlasVariantFolder}/${system.theme}.webp</path>
+      <opacity>${heroOpacity}</opacity>
+      <saturation>${heroSaturation}</saturation>
+      <brightness>${heroBrightness}</brightness>
+      <zIndex>2</zIndex>
+    </image>
+    <image name="emerald-bloom">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./_inc/atlas/ui/system-emerald-glow.png</path>
+      <color>${emeraldGlowColor}</color>
+      <zIndex>3</zIndex>
+    </image>
+    <image name="left-fade">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./_inc/atlas/ui/system-left-fade.png</path>
+      <color>${leftFadeColor}</color>
+      <zIndex>4</zIndex>
+    </image>
+    <image name="bottom-fade">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./_inc/atlas/ui/system-bottom-fade.png</path>
+      <color>${bottomFadeColor}</color>
+      <zIndex>4</zIndex>
+    </image>
+    <image name="vignette">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./_inc/atlas/ui/system-vignette.png</path>
+      <color>${vignetteColor}</color>
+      <zIndex>5</zIndex>
+    </image>
+    <image name="atlas-wordmark">
+      <origin>0.5 0</origin>
+      <pos>0.5 0.002</pos>
+      <maxSize>0.290 0.060</maxSize>
+      <path>./_inc/atlas/branding/atlas-wordmark.png</path>
+      <zIndex>20</zIndex>
+    </image>
+    <image name="atlas-tagline">
+      <origin>0.5 0</origin>
+      <pos>0.5 0.064</pos>
+      <maxSize>0.240 0.024</maxSize>
+      <path>./_inc/atlas/branding/atlas-tagline.png</path>
+      <zIndex>20</zIndex>
+    </image>
+    <image name="atlas-os-lockup">
+      <origin>0 0</origin>
+      <pos>0.016 0.011</pos>
+      <maxSize>0.145 0.040</maxSize>
+      <path>./_inc/atlas/branding/atlas-os-lockup.png</path>
+      <zIndex>20</zIndex>
+    </image>
+    <systemstatus name="system-status">
+      <origin>1 0.5</origin>
+      <pos>0.925 0.034</pos>
+      <height>0.021</height>
+      <fontPath>${fontDisplay}</fontPath>
+      <textRelativeScale>0.82</textRelativeScale>
+      <entrySpacing>0.006</entrySpacing>
+      <color>${headerTextColor}</color>
+    </systemstatus>
+    <clock name="clock">
+      <origin>1 0.5</origin>
+      <pos>0.960 0.034</pos>
+      <fontSize>0.019</fontSize>
+      <fontPath>${fontDisplay}</fontPath>
+      <color>${headerTextColor}</color>
+    </clock>
+    <image name="system-logo">
+      <origin>0 0.5</origin>
+      <pos>0.043 0.208</pos>
+      <maxSize>0.235 0.078</maxSize>
+      <default>./_inc/systems/system-logos/_default.png</default>
+      <path>./_inc/systems/system-logos/${system.theme}.png</path>
+      <zIndex>8</zIndex>
+    </image>
+    <text name="autoCollectionName, customCollectionName">
+      <origin>0 0</origin>
+      <pos>0.043 0.276</pos>
+      <size>0.001 0.001</size>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.001</fontSize>
+      <letterCase>uppercase</letterCase>
+      <color>00000000</color>
+      <zIndex>8</zIndex>
+    </text>
+    <text name="autoCollectionName">
+      <text>${system.fullName.autoCollections}</text>
+    </text>
+    <text name="customCollectionName">
+      <text>${system.fullName.customCollections}</text>
+      <letterCase>none</letterCase>
+    </text>
+    <image name="system-title-image">
+      <origin>0 0.5</origin>
+      <pos>0.044 0.313</pos>
+      <maxSize>0.348 0.082</maxSize>
+      <path>./_inc/systems/titles/${system.theme}.png</path>
+      <zIndex>9</zIndex>
+    </image>
+    <text name="system-description">
+      <origin>0 0</origin>
+      <pos>0.044 0.367</pos>
+      <size>0.292 0.120</size>
+      <text>${systemSummary}</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0205</fontSize>
+      <lineSpacing>1.20</lineSpacing>
+      <color>${bodyTextColor}</color>
+      <zIndex>9</zIndex>
+    </text>
+    <gameselector name="lastplayed-selector">
+      <selection>lastplayed</selection>
+      <gameCount>1</gameCount>
+    </gameselector>
+    <image name="stat-games-icon">
+      <origin>0 0.5</origin>
+      <pos>0.046 0.514</pos>
+      <size>0.020 0.020</size>
+      <path>./_inc/atlas/ui/stat-games.svg</path>
+      <color>${mutedTextColor}</color>
+      <zIndex>9</zIndex>
+    </image>
+    <text name="stat-games-label">
+      <origin>0 0.5</origin>
+      <pos>0.078 0.514</pos>
+      <size>0.17 0.025</size>
+      <text>GAMES</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0185</fontSize>
+      <color>${mutedTextColor}</color>
+      <zIndex>9</zIndex>
+    </text>
+    <text name="stat-games-value">
+      <origin>1 0.5</origin>
+      <pos>0.330 0.514</pos>
+      <size>0.10 0.025</size>
+      <systemdata>gamecountGamesNoText</systemdata>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.019</fontSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${accentColor}</color>
+      <zIndex>9</zIndex>
+    </text>
+    <image name="stat-separator-1">
+      <origin>0 0</origin>
+      <pos>0.044 0.535</pos>
+      <size>0.286 0.0012</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${rowSeparatorColor}</color>
+      <zIndex>8</zIndex>
+    </image>
+    <image name="stat-favorites-icon">
+      <origin>0 0.5</origin>
+      <pos>0.046 0.558</pos>
+      <size>0.020 0.020</size>
+      <path>./_inc/atlas/ui/stat-favorites.svg</path>
+      <color>${mutedTextColor}</color>
+      <zIndex>9</zIndex>
+    </image>
+    <text name="stat-favorites-label">
+      <origin>0 0.5</origin>
+      <pos>0.078 0.558</pos>
+      <size>0.17 0.025</size>
+      <text>FAVORITES</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0185</fontSize>
+      <color>${mutedTextColor}</color>
+      <zIndex>9</zIndex>
+    </text>
+    <text name="stat-favorites-value">
+      <origin>1 0.5</origin>
+      <pos>0.330 0.558</pos>
+      <size>0.10 0.025</size>
+      <systemdata>gamecountFavoritesNoText</systemdata>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.019</fontSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${accentColor}</color>
+      <zIndex>9</zIndex>
+    </text>
+    <image name="stat-separator-2">
+      <origin>0 0</origin>
+      <pos>0.044 0.579</pos>
+      <size>0.286 0.0012</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${rowSeparatorColor}</color>
+      <zIndex>8</zIndex>
+    </image>
+    <image name="stat-last-icon">
+      <origin>0 0.5</origin>
+      <pos>0.046 0.602</pos>
+      <size>0.020 0.020</size>
+      <path>./_inc/atlas/ui/stat-clock.svg</path>
+      <color>${mutedTextColor}</color>
+      <zIndex>9</zIndex>
+    </image>
+    <text name="stat-last-label">
+      <origin>0 0.5</origin>
+      <pos>0.078 0.602</pos>
+      <size>0.17 0.025</size>
+      <text>LAST PLAYED</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0185</fontSize>
+      <color>${mutedTextColor}</color>
+      <zIndex>9</zIndex>
+    </text>
+    <datetime name="stat-last-value">
+      <origin>1 0.5</origin>
+      <pos>0.330 0.602</pos>
+      <size>0.14 0.025</size>
+      <metadata>lastplayed</metadata>
+      <gameselector>lastplayed-selector</gameselector>
+      <displayRelative>false</displayRelative>
+      <format>%m/%d/%Y</format>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.019</fontSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${accentColor}</color>
+      <zIndex>9</zIndex>
+    </datetime>
+    <image name="stat-separator-3">
+      <origin>0 0</origin>
+      <pos>0.044 0.623</pos>
+      <size>0.286 0.0012</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${rowSeparatorColor}</color>
+      <zIndex>8</zIndex>
+    </image>
+    <image name="stat-progress-icon">
+      <origin>0 0.5</origin>
+      <pos>0.046 0.646</pos>
+      <size>0.020 0.020</size>
+      <path>./_inc/atlas/ui/stat-system.svg</path>
+      <color>${mutedTextColor}</color>
+      <zIndex>9</zIndex>
+    </image>
+    <text name="stat-progress-label">
+      <origin>0 0.5</origin>
+      <pos>0.078 0.646</pos>
+      <size>0.19 0.025</size>
+      <text>COLLECTION PROGRESS</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0185</fontSize>
+      <color>${mutedTextColor}</color>
+      <zIndex>9</zIndex>
+    </text>
+    <text name="stat-progress-value">
+      <origin>1 0.5</origin>
+      <pos>0.330 0.646</pos>
+      <size>0.10 0.025</size>
+      <text>${systemCollectionProgress}</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.019</fontSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${accentColor}</color>
+      <zIndex>9</zIndex>
+    </text>
+    <image name="accent-track">
+      <origin>0 0</origin>
+      <pos>0.044 0.684</pos>
+      <size>0.286 0.007</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${trackColor}</color>
+      <cornerRadius>0.006</cornerRadius>
+      <zIndex>9</zIndex>
+    </image>
+    <image name="accent-fill">
+      <origin>0 0</origin>
+      <pos>0.044 0.684</pos>
+      <size>0.205 0.007</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${accentColor}</color>
+      <cornerRadius>0.006</cornerRadius>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="carousel-fill">
+      <origin>0 0</origin>
+      <pos>0 0.722</pos>
+      <size>1 0.190</size>
+      <path>./_inc/atlas/ui/carousel-fill.png</path>
+      <color>${cardFillColor}</color>
+      <zIndex>10</zIndex>
+    </image>
+    <image name="carousel-border">
+      <origin>0 0</origin>
+      <pos>0 0.722</pos>
+      <size>1 0.190</size>
+      <path>./_inc/atlas/ui/carousel-border.png</path>
+      <color>${cardBorderColor}</color>
+      <zIndex>11</zIndex>
+    </image>
+    <image name="carousel-selected-glow">
+      <origin>0 0</origin>
+      <pos>0 0.722</pos>
+      <size>1 0.190</size>
+      <path>./_inc/atlas/ui/carousel-selected-glow.png</path>
+      <color>${selectedGlowColor}</color>
+      <zIndex>11</zIndex>
+    </image>
+    <image name="carousel-selected-fill">
+      <origin>0 0</origin>
+      <pos>0 0.722</pos>
+      <size>1 0.190</size>
+      <path>./_inc/atlas/ui/carousel-selected-fill.png</path>
+      <color>${selectedFillColor}</color>
+      <zIndex>12</zIndex>
+    </image>
+    <image name="carousel-selected-border">
+      <origin>0 0</origin>
+      <pos>0 0.722</pos>
+      <size>1 0.190</size>
+      <path>./_inc/atlas/ui/carousel-selected-border.png</path>
+      <color>${selectedBorderColor}</color>
+      <zIndex>13</zIndex>
+    </image>
+    <carousel name="systemcarousel">
+      <origin>0.5 0</origin>
+      <pos>0.5 0.746</pos>
+      <size>0.968 0.145</size>
+      <type>horizontal</type>
+      <maxItemCount>7</maxItemCount>
+      <itemSize>0.119 0.104</itemSize>
+      <itemScale>1.045</itemScale>
+      <staticImage>./_inc/systems/logos-atlas/${system.theme}.png</staticImage>
+      <defaultImage>./_inc/systems/logos-atlas/_default.png</defaultImage>
+      <imageFit>contain</imageFit>
+      <itemVerticalAlignment>center</itemVerticalAlignment>
+      <verticalOffset>0</verticalOffset>
+      <selectedItemMargins>0.004 0.004</selectedItemMargins>
+      <selectedItemOffset>0 0</selectedItemOffset>
+      <unfocusedItemOpacity>${unfocusedOpacity}</unfocusedItemOpacity>
+      <unfocusedItemSaturation>${unfocusedSaturation}</unfocusedItemSaturation>
+      <fastScrolling>true</fastScrolling>
+      <color>00000000</color>
+      <textColor>${mutedTextColor}</textColor>
+      <textSelectedColor>${titleColor}</textSelectedColor>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.017</fontSize>
+      <textRelativeScale>0.68</textRelativeScale>
+      <zIndex>14</zIndex>
+    </carousel>
+    <text name="left-arrow">
+      <origin>0 0.5</origin>
+      <pos>0.008 0.807</pos>
+      <text>‹</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.054</fontSize>
+      <color>${accentColor}</color>
+      <zIndex>15</zIndex>
+    </text>
+    <text name="right-arrow">
+      <origin>1 0.5</origin>
+      <pos>0.992 0.807</pos>
+      <text>›</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.054</fontSize>
+      <color>${accentColor}</color>
+      <zIndex>15</zIndex>
+    </text>
+    <image name="footer">
+      <origin>0 0</origin>
+      <pos>0 0.925</pos>
+      <size>1 0.075</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${footerColor}</color>
+      <zIndex>16</zIndex>
+    </image>
+    <image name="footer-line">
+      <origin>0 0</origin>
+      <pos>0 0.925</pos>
+      <size>1 0.0013</size>
+      <path>./_inc/atlas/ui/solid.png</path>
+      <color>${footerLineColor}</color>
+      <zIndex>17</zIndex>
+    </image>
+    <helpsystem name="help">
+      <origin>0 0.5</origin>
+      <pos>0.070 0.962</pos>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0238</fontSize>
+      <entryRelativeScale>1.08</entryRelativeScale>
+      <entrySpacing>0.034</entrySpacing>
+      <iconTextSpacing>0.010</iconTextSpacing>
+      <letterCase>uppercase</letterCase>
+      <iconColor>${accentColor}</iconColor>
+      <textColor>${helpTextColor}</textColor>
+      <originDimmed>0.5 0.5</originDimmed>
+      <posDimmed>0.5 0.962</posDimmed>
+      <iconColorDimmed>${accentColor}</iconColorDimmed>
+      <textColorDimmed>${helpTextColor}</textColorDimmed>
+    </helpsystem>
+    <image name="footer-gamepad">
+      <origin>1 0.5</origin>
+      <pos>0.900 0.962</pos>
+      <size>0.028 0.028</size>
+      <path>./_inc/atlas/ui/stat-games.svg</path>
+      <color>${accentColor}</color>
+      <zIndex>18</zIndex>
+    </image>
+    <text name="footer-count">
+      <origin>1 0.5</origin>
+      <pos>0.944 0.962</pos>
+      <size>0.090 0.032</size>
+      <systemdata>gamecountGamesNoText</systemdata>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.023</fontSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${accentColor}</color>
+      <zIndex>18</zIndex>
+    </text>
+    <text name="footer-games">
+      <origin>1 0.5</origin>
+      <pos>0.991 0.962</pos>
+      <size>0.062 0.032</size>
+      <text>GAMES</text>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.0195</fontSize>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>${helpTextColor}</color>
+      <zIndex>18</zIndex>
+    </text>
+  </view>
+</theme>

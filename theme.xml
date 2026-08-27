@@ -1,0 +1,102 @@
+<!--
+  ATLAS ES-DE Theme — Phase 1 Revision 5
+  Designed by Curtis Armstrong
+  Based on the original Elementerial ES-DE port structure.
+  License retained: Creative Commons CC-BY-NC-SA.
+-->
+<theme>
+  <include>./_inc/systems/metadata-global/_default.xml</include>
+  <include>./_inc/systems/metadata-global/${system.theme}.xml</include>
+  <include>./_inc/systems/metadata-custom/${system.theme}.xml</include>
+
+  <variables>
+    <fontRegular>./_inc/fonts/Inter-Regular.otf</fontRegular>
+    <fontBold>./_inc/fonts/Inter-Bold.otf</fontBold>
+    <fontLight>./_inc/fonts/Inter-Light.otf</fontLight>
+    <fontDisplay>./_inc/fonts/RobotoCondensed-Regular.ttf</fontDisplay>
+    <modernCropPos>0.46</modernCropPos>
+    <atlasBackground>./_inc/atlas/backgrounds/balanced.webp</atlasBackground>
+    <atlasGamelistBackground>./_inc/atlas/backgrounds/balanced-gamelist.webp</atlasGamelistBackground>
+    <atlasVariantFolder>balanced</atlasVariantFolder>
+    <badgeInactiveColor>8B969980</badgeInactiveColor>
+    <panelSoftColor>07101472</panelSoftColor>
+  </variables>
+
+  <variant name="atlas-balanced">
+    <variables>
+      <atlasBackground>./_inc/atlas/backgrounds/balanced.webp</atlasBackground><atlasGamelistBackground>./_inc/atlas/backgrounds/balanced-gamelist.webp</atlasGamelistBackground><atlasVariantFolder>balanced</atlasVariantFolder>
+      <heroOpacity>0.98</heroOpacity><heroSaturation>0.96</heroSaturation><heroBrightness>-0.02</heroBrightness>
+      <leftFadeColor>071013CC</leftFadeColor><bottomFadeColor>050C10D8</bottomFadeColor><vignetteColor>0000008C</vignetteColor><emeraldGlowColor>4CFFC9A8</emeraldGlowColor>
+      <titleColor>F2F5F5FF</titleColor><bodyTextColor>C8D0D2FF</bodyTextColor><mutedTextColor>9FAAACFF</mutedTextColor><headerTextColor>DDE5E6FF</headerTextColor>
+      <accentColor>47F4AEFF</accentColor><trackColor>7E8D9052</trackColor><rowSeparatorColor>A9B5B62E</rowSeparatorColor>
+      <cardFillColor>07101499</cardFillColor><cardBorderColor>B6C1C265</cardBorderColor><selectedFillColor>071713D8</selectedFillColor><selectedBorderColor>54FFC0FF</selectedBorderColor><selectedGlowColor>43FFB8B5</selectedGlowColor>
+      <badgeInactiveColor>93A0A380</badgeInactiveColor><panelSoftColor>07101472</panelSoftColor>
+      <footerColor>050B0EEA</footerColor><footerLineColor>70F0BD35</footerLineColor><helpIconColor>B7C1C3FF</helpIconColor><helpTextColor>B7C1C3FF</helpTextColor>
+      <unfocusedOpacity>0.68</unfocusedOpacity><unfocusedSaturation>0.76</unfocusedSaturation>
+    </variables>
+    <include>./atlas-system.xml</include><include>./atlas-gamelist.xml</include>
+  </variant>
+
+  <variant name="atlas-dark">
+    <variables>
+      <atlasBackground>./_inc/atlas/backgrounds/dark.webp</atlasBackground><atlasGamelistBackground>./_inc/atlas/backgrounds/dark-gamelist.webp</atlasGamelistBackground><atlasVariantFolder>dark</atlasVariantFolder>
+      <heroOpacity>1</heroOpacity><heroSaturation>1</heroSaturation><heroBrightness>-0.04</heroBrightness>
+      <leftFadeColor>000507D0</leftFadeColor><bottomFadeColor>000406D8</bottomFadeColor><vignetteColor>000000B5</vignetteColor><emeraldGlowColor>39FFACCA</emeraldGlowColor>
+      <titleColor>F5F7F7FF</titleColor><bodyTextColor>C6CED0FF</bodyTextColor><mutedTextColor>919C9FFF</mutedTextColor><headerTextColor>D8E0E1FF</headerTextColor>
+      <accentColor>42F5A7FF</accentColor><trackColor>68777A50</trackColor><rowSeparatorColor>9CA8AA24</rowSeparatorColor>
+      <cardFillColor>020608A8</cardFillColor><cardBorderColor>8B989A55</cardBorderColor><selectedFillColor>03110EDC</selectedFillColor><selectedBorderColor>48FFB2FF</selectedBorderColor><selectedGlowColor>37FFAAA8</selectedGlowColor>
+      <badgeInactiveColor>89959878</badgeInactiveColor><panelSoftColor>01060882</panelSoftColor>
+      <footerColor>010406EE</footerColor><footerLineColor>46ECA92C</footerLineColor><helpIconColor>AAB5B7FF</helpIconColor><helpTextColor>AAB5B7FF</helpTextColor>
+      <unfocusedOpacity>0.58</unfocusedOpacity><unfocusedSaturation>0.66</unfocusedSaturation>
+    </variables>
+    <include>./atlas-system.xml</include><include>./atlas-gamelist.xml</include>
+  </variant>
+
+  <variant name="atlas-light">
+    <variables>
+      <atlasBackground>./_inc/atlas/backgrounds/light.webp</atlasBackground><atlasGamelistBackground>./_inc/atlas/backgrounds/light-gamelist.webp</atlasGamelistBackground><atlasVariantFolder>light</atlasVariantFolder>
+      <heroOpacity>0.98</heroOpacity><heroSaturation>0.91</heroSaturation><heroBrightness>0.06</heroBrightness>
+      <leftFadeColor>F4F6F7D4</leftFadeColor><bottomFadeColor>EEF2F4D8</bottomFadeColor><vignetteColor>FFFFFF56</vignetteColor><emeraldGlowColor>20C98762</emeraldGlowColor>
+      <titleColor>343B3DFF</titleColor><bodyTextColor>4F595CFF</bodyTextColor><mutedTextColor>697477FF</mutedTextColor><headerTextColor>4D5659FF</headerTextColor>
+      <accentColor>0CB878FF</accentColor><trackColor>75828542</trackColor><rowSeparatorColor>6774772B</rowSeparatorColor>
+      <cardFillColor>FFFFFFB0</cardFillColor><cardBorderColor>65717445</cardBorderColor><selectedFillColor>F9FFFCF0</selectedFillColor><selectedBorderColor>16BE7FFF</selectedBorderColor><selectedGlowColor>18C88472</selectedGlowColor>
+      <badgeInactiveColor>707B7E72</badgeInactiveColor><panelSoftColor>FFFFFF82</panelSoftColor>
+      <footerColor>F8FAFBEA</footerColor><footerLineColor>0EB87926</footerLineColor><helpIconColor>586366FF</helpIconColor><helpTextColor>586366FF</helpTextColor>
+      <unfocusedOpacity>0.78</unfocusedOpacity><unfocusedSaturation>0.82</unfocusedSaturation>
+    </variables>
+    <include>./atlas-system.xml</include><include>./atlas-gamelist.xml</include>
+  </variant>
+
+  <variant name="atlas-vibrant">
+    <variables>
+      <atlasBackground>./_inc/atlas/backgrounds/vibrant.webp</atlasBackground><atlasGamelistBackground>./_inc/atlas/backgrounds/vibrant-gamelist.webp</atlasGamelistBackground><atlasVariantFolder>vibrant</atlasVariantFolder>
+      <heroOpacity>1</heroOpacity><heroSaturation>1</heroSaturation><heroBrightness>0.03</heroBrightness>
+      <leftFadeColor>001017CA</leftFadeColor><bottomFadeColor>000C12D6</bottomFadeColor><vignetteColor>00000078</vignetteColor><emeraldGlowColor>42FFB9E0</emeraldGlowColor>
+      <titleColor>FFFFFFFF</titleColor><bodyTextColor>E0E9EAFF</bodyTextColor><mutedTextColor>AAB9BBFF</mutedTextColor><headerTextColor>ECF3F3FF</headerTextColor>
+      <accentColor>49FFB2FF</accentColor><trackColor>7EA59F58</trackColor><rowSeparatorColor>B6C9C936</rowSeparatorColor>
+      <cardFillColor>00101798</cardFillColor><cardBorderColor>C8E0DF70</cardBorderColor><selectedFillColor>001B16E5</selectedFillColor><selectedBorderColor>56FFC0FF</selectedBorderColor><selectedGlowColor>48FFBCE0</selectedGlowColor>
+      <badgeInactiveColor>A7B7B980</badgeInactiveColor><panelSoftColor>00101772</panelSoftColor>
+      <footerColor>000A0FEB</footerColor><footerLineColor>4AFFB43C</footerLineColor><helpIconColor>D2DFE0FF</helpIconColor><helpTextColor>D2DFE0FF</helpTextColor>
+      <unfocusedOpacity>0.66</unfocusedOpacity><unfocusedSaturation>0.82</unfocusedSaturation>
+    </variables>
+    <include>./atlas-system.xml</include><include>./atlas-gamelist.xml</include>
+  </variant>
+
+  <variant name="atlas-clean">
+    <variables>
+      <atlasBackground>./_inc/atlas/backgrounds/clean.webp</atlasBackground><atlasGamelistBackground>./_inc/atlas/backgrounds/clean-gamelist.webp</atlasGamelistBackground><atlasVariantFolder>clean</atlasVariantFolder>
+      <heroOpacity>0.96</heroOpacity><heroSaturation>0.82</heroSaturation><heroBrightness>0.10</heroBrightness>
+      <leftFadeColor>FFFFFFD8</leftFadeColor><bottomFadeColor>F8FAFBD8</bottomFadeColor><vignetteColor>FFFFFF38</vignetteColor><emeraldGlowColor>20C98742</emeraldGlowColor>
+      <titleColor>282E30FF</titleColor><bodyTextColor>4E585BFF</bodyTextColor><mutedTextColor>707B7EFF</mutedTextColor><headerTextColor>50595CFF</headerTextColor>
+      <accentColor>0DB576FF</accentColor><trackColor>77848736</trackColor><rowSeparatorColor>77848722</rowSeparatorColor>
+      <cardFillColor>FFFFFFBC</cardFillColor><cardBorderColor>727E8135</cardBorderColor><selectedFillColor>FBFFFDF4</selectedFillColor><selectedBorderColor>13B979FF</selectedBorderColor><selectedGlowColor>16C17F55</selectedGlowColor>
+      <badgeInactiveColor>737E8168</badgeInactiveColor><panelSoftColor>FFFFFF86</panelSoftColor>
+      <footerColor>FFFFFFEC</footerColor><footerLineColor>0DB57620</footerLineColor><helpIconColor>596467FF</helpIconColor><helpTextColor>596467FF</helpTextColor>
+      <unfocusedOpacity>0.75</unfocusedOpacity><unfocusedSaturation>0.72</unfocusedSaturation>
+    </variables>
+    <include>./atlas-system.xml</include><include>./atlas-gamelist.xml</include>
+  </variant>
+
+  <aspectRatio name="4:3"><include>./aspect-ratio-4-3.xml</include></aspectRatio>
+  <aspectRatio name="16:9"><include>./aspect-ratio-16-9.xml</include></aspectRatio>
+</theme>
