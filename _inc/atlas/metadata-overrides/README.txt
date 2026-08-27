@@ -2,7 +2,7 @@ ATLAS per-game metadata icon overrides
 ======================================
 
 ES-DE does not currently expose arbitrary custom metadata fields to themes for
-"RetroAchievements available" or "ATLAS verified". Revision 5 therefore uses
+"RetroAchievements available" or "ATLAS verified". ATLAS therefore
 the supported gameOverridePath mechanism as a manual, per-game switch.
 
 To activate an icon for a game:
