@@ -1,7 +1,7 @@
 <themeCapabilities>
   <themeName>ATLAS</themeName>
 
-  <!-- Phase 1 is intentionally focused on the two landscape targets used by the concept art. -->
+  <!-- ATLAS currently supports 4:3 and 16:9 landscape layouts. -->
   <aspectRatio>4:3</aspectRatio>
   <aspectRatio>16:9</aspectRatio>
 

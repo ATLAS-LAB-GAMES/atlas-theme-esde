@@ -1,77 +1,172 @@
-## Phase 1 Revision 3
-- Enlarged and repositioned hero artwork so characters/art can extend under the top header, behind the information area, and further beneath the system carousel.
-- Replaced the top-center ATLAS header with a metallic lockup asset closer to the supplied concept art, including a smaller integrated emblem and updated green accent.
-- Replaced the top-left ATLAS OS lockup with a concept-art-based style asset while leaving the version text separate.
-- Reduced overlay opacity in the information side fade, bottom fade, and carousel fill so more of the background hero art remains visible.
+# ATLAS Theme for ES-DE
 
-# ATLAS for ES-DE — Phase 1 Revision 2
+**Version 0.1.0**
 
-ATLAS is a focused ES-DE theme designed to provide a console-like interface for browsing and preserving classic game libraries. This revision aligns the system view much more closely with the supplied ATLAS concept artwork and deliberately limits customization to five visual variants.
+ATLAS is a console-focused theme for [ES-DE](https://es-de.org/) designed around cinematic system artwork, a compact console-style information layout, and a consistent visual identity across classic and modern gaming platforms.
 
-## System-view variants
+This is the first public release of the ATLAS ES-DE theme from **ATLAS-LAB-GAMES**.
 
-- **Balanced** — smoky graphite, moderate contrast and restrained emerald lighting
-- **Dark** — deep black, cinematic shadows and the strongest emerald glow
-- **Light** — luminous silver-white with soft depth
-- **Vibrant** — saturated teal and emerald energy
-- **Clean** — minimal white and pale grey
+## Features
 
-All five use the same layout and navigation behavior.
-
-## Revised system view
-
-- Full-screen hero artwork rather than a separated rectangular art region
-- Open left-side information area with no outlined panel
-- Supplied ATLAS emblem, centered metallic wordmark and compact ATLAS OS lockup
-- Roboto Condensed system information typography
-- Metallic pre-rendered system title artwork
-- Concise system summaries instead of long metadata paragraphs
-- Game count, favorite count, last-played date and collection-progress row
-- Seven-card system carousel with a restrained frame and stronger selected glow
-- Slim footer controls and simple transitions
-
-The five supplied PlayStation concept images are used to provide variant-specific PlayStation hero artwork. Existing artwork is retained for other systems until their dedicated visual passes are completed.
-
-### Collection progress field
-
-ES-DE does not expose a live system-level collection completion percentage to themes. The layout includes the field because it is part of the supplied concept design, but the underlying `${systemCollectionProgress}` variable defaults to `—`. A value can be set manually in a system metadata XML file when desired.
-
-## Interim gamelist
-
-Phase 1 keeps one interim 3D-box carousel with video and fan-art/screenshot support. The final Elementarial-inspired **3D-box grid** is planned for Phase 2.
+- Five selectable visual variants:
+  - **Balanced** — moderate contrast with restrained emerald lighting
+  - **Dark** — deep blacks, cinematic shadows, and stronger green highlights
+  - **Light** — bright silver-white styling with softer depth
+  - **Vibrant** — higher saturation with stronger teal and emerald energy
+  - **Clean** — minimal white and pale-grey presentation
+- Dedicated **4:3** layout, with handheld devices such as the Anbernic RG476H as a primary design target
+- **16:9** landscape support
+- Full-screen, system-specific ATLAS artwork
+- Metallic system titles and ATLAS system branding
+- Seven-item system carousel
+- System information panel with:
+  - game count
+  - favorite count
+  - last-played date
+  - collection-progress field
+- ATLAS-styled gamelist with 3D box-art carousel
+- Video and fan-art/screenshot support
+- Native ES-DE metadata indicators for favorites, playtime, completion, manuals, rating, and broken status
+- Optional per-game RetroAchievements indicator overrides
+- Dedicated artwork and metadata for supported ATLAS custom collections
+- ATLAS transition profile with fade transitions between system and gamelist views
 
 ## Supported aspect ratios
 
-- **4:3** — primary target matching the supplied concept art and RG476H display
-- **16:9** — landscape fallback
+ATLAS currently supports:
 
-## Included collection systems
+- **4:3** — primary ATLAS layout
+- **16:9** — widescreen landscape layout
 
-- Middle Earth Collection
-- Pokemon Collection
-- Zelda Collection
-- Sonic Collection
-- Mario Collection
-- Jurassic Park Collection
-- Hogwarts Collection
-- Final Fantasy Collection
-- Yu-Gi-Oh Collection
-- Digimon Collection
-- EA Sports Collection
-
-Create or rename each ES-DE custom collection using the exact corresponding name. In **Game collection settings**, set **Group custom collections** to **If unthemed** or **Never** so explicitly themed collections can appear as individual systems.
+The layout can be selected through ES-DE's theme settings when automatic aspect-ratio selection does not choose the desired mode.
 
 ## Installation
 
-1. Extract the `atlas-es-de` folder into the ES-DE themes directory.
-2. Select **ATLAS** in ES-DE UI Settings.
-3. Choose Balanced, Dark, Light, Vibrant or Clean under Theme Variant.
-4. Select 4:3 or 16:9 if automatic aspect-ratio detection does not choose the intended layout.
+### Release download
 
-Keep a backup of the previous theme folder before replacing it.
+1. Download the latest ATLAS ES-DE theme release from this repository.
+2. Extract the release archive.
+3. Copy the extracted theme folder into your ES-DE themes directory.
+4. Start or restart ES-DE.
+5. Open **UI Settings → Theme**.
+6. Select **ATLAS**.
+7. Select the desired theme variant:
+   - Balanced
+   - Dark
+   - Light
+   - Vibrant
+   - Clean
 
-## Credits and notice
+Keep the complete directory structure intact. The `_inc` directory contains required artwork, fonts, metadata, logos, icons, and supporting XML files.
 
-The theme was derived from the Elementerial ES-DE port, itself based on Elementerial by mluizvitor. Existing Inter and Roboto Condensed font assets are retained from the uploaded theme package.
+### Git installation
 
-The package retains the original **Creative Commons CC-BY-NC-SA** licensing notice. Third-party platform names, logos, characters and game artwork remain the property of their respective rights holders. This is a noncommercial fan project intended for game-library preservation and personal use.
+The repository can also be cloned directly into your ES-DE themes directory:
+
+```bash
+git clone https://github.com/ATLAS-LAB-GAMES/atlas-theme-esde.git
+```
+
+To update a cloned copy later:
+
+```bash
+git pull
+```
+
+## Repository structure
+
+```text
+atlas-theme-esde/
+├── _inc/
+│   ├── atlas/
+│   ├── fonts/
+│   └── systems/
+├── Digimon Collection/
+├── EA Sports Collection/
+├── Final Fantasy Collection/
+├── Hogwarts Collection/
+├── Jurassic Park Collection/
+├── Mario Collection/
+├── Middle Earth Collection/
+├── Pokemon Collection/
+├── Sonic Collection/
+├── Yu-Gi-Oh Collection/
+├── Zelda Collection/
+├── completed/
+├── now-playing/
+├── aspect-ratio-16-9.xml
+├── aspect-ratio-4-3.xml
+├── atlas-gamelist.xml
+├── atlas-system.xml
+├── capabilities.xml
+├── theme.xml
+├── README.md
+├── ATLAS-METADATA-NOTES.md
+└── COLLECTIONS-SETUP.md
+```
+
+## Custom collections
+
+ATLAS currently includes dedicated theme support for:
+
+- Digimon Collection
+- EA Sports Collection
+- Final Fantasy Collection
+- Hogwarts Collection
+- Jurassic Park Collection
+- Mario Collection
+- Middle Earth Collection
+- Pokemon Collection
+- Sonic Collection
+- Yu-Gi-Oh Collection
+- Zelda Collection
+
+See [COLLECTIONS-SETUP.md](COLLECTIONS-SETUP.md) for configuration instructions.
+
+## Metadata
+
+ATLAS uses ES-DE's native metadata where possible and supplements it with ATLAS-specific system metadata and optional per-game overrides.
+
+See [ATLAS-METADATA-NOTES.md](ATLAS-METADATA-NOTES.md) for details.
+
+## Collection progress
+
+ES-DE does not currently expose a live system-level completion percentage to themes.
+
+ATLAS therefore provides the variable:
+
+```text
+${systemCollectionProgress}
+```
+
+It defaults to an em dash (`—`) unless a value is supplied through the system metadata configuration.
+
+## Compatibility and project status
+
+Version **0.1.0** is the first public ATLAS ES-DE release.
+
+The theme is intended for ES-DE 3.x and uses the current ES-DE theme capability, metadata, badge, carousel, and game-override mechanisms used during ATLAS development.
+
+Because ATLAS contains a large amount of system-specific artwork, the repository and release archive are substantially larger than a typical text-only ES-DE theme.
+
+## Credits
+
+ATLAS was developed using the structure of the **Elementerial ES-DE port**, which is based on the original Elementerial theme by **mluizvitor**.
+
+The included system metadata set incorporates third-party metadata work distributed under Creative Commons Attribution-NonCommercial-ShareAlike terms. Some metadata was derived from sources including Wikipedia, LaunchBox, ScreenScraper, and prior community theme projects.
+
+Included fonts and third-party assets retain their respective licenses.
+
+Platform names, logos, game characters, artwork, and trademarks remain the property of their respective owners.
+
+ATLAS is a non-commercial fan project intended for personal game-library organization and preservation.
+
+## License
+
+The ATLAS theme is distributed under **Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)** terms, subject to the separate rights and licenses that apply to included third-party assets.
+
+## Project
+
+**ATLAS-LAB-GAMES**
+
+Find your game. Play your way.
