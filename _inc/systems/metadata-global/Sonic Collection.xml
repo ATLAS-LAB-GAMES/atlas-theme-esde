@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Sonic Collection</systemName>
+        <systemSummary>High-speed platforming, racing and action adventures from the blue blur and friends.</systemSummary>
+    <systemDescription>High-speed platforming, racing and action adventures from the blue blur and friends.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>1259BE</systemColor>
+    <systemColorPalette1>E1252A</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

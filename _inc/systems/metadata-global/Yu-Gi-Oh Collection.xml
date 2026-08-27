@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Yu-Gi-Oh Collection</systemName>
+        <systemSummary>Dueling, deck-building and strategy games from the world of Yu-Gi-Oh.</systemSummary>
+    <systemDescription>Dueling, deck-building and strategy games from the world of Yu-Gi-Oh.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>371E58</systemColor>
+    <systemColorPalette1>D6A830</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

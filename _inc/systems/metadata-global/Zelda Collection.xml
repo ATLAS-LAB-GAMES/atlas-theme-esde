@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Zelda Collection</systemName>
+        <systemSummary>A collection of heroic adventures, ancient legends, puzzles and journeys through Hyrule and beyond.</systemSummary>
+    <systemDescription>A collection of heroic adventures, ancient legends, puzzles and journeys through Hyrule and beyond.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>1C693D</systemColor>
+    <systemColorPalette1>CDA53F</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Hogwarts Collection</systemName>
+        <systemSummary>Magical adventures, mysteries and journeys through the wizarding world and Hogwarts.</systemSummary>
+    <systemDescription>Magical adventures, mysteries and journeys through the wizarding world and Hogwarts.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>39305C</systemColor>
+    <systemColorPalette1>BF9137</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

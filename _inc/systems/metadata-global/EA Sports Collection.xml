@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>EA Sports Collection</systemName>
+        <systemSummary>A collection of classic and modern sports experiences spanning leagues, eras and platforms.</systemSummary>
+    <systemDescription>A collection of classic and modern sports experiences spanning leagues, eras and platforms.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>74121E</systemColor>
+    <systemColorPalette1>E6E6E6</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

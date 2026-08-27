@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Pokemon Collection</systemName>
+        <systemSummary>A dedicated library of creature-catching adventures, battles and journeys across generations.</systemSummary>
+    <systemDescription>A dedicated library of creature-catching adventures, battles and journeys across generations.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>E6B614</systemColor>
+    <systemColorPalette1>2D5CB1</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

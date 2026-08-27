@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Middle Earth Collection</systemName>
+        <systemSummary>A curated journey through games inspired by the realms, heroes and legends of Middle-earth.</systemSummary>
+    <systemDescription>A curated journey through games inspired by the realms, heroes and legends of Middle-earth.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>2B482F</systemColor>
+    <systemColorPalette1>B69649</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

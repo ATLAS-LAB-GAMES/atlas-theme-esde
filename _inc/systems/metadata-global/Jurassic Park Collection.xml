@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Jurassic Park Collection</systemName>
+        <systemSummary>Games of survival, exploration and prehistoric adventure inspired by Jurassic Park.</systemSummary>
+    <systemDescription>Games of survival, exploration and prehistoric adventure inspired by Jurassic Park.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>21523A</systemColor>
+    <systemColorPalette1>CB3429</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

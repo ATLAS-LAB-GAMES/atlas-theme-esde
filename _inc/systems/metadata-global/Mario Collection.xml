@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Mario Collection</systemName>
+        <systemSummary>A collection of platforming, racing, party and sports adventures from the Mushroom Kingdom.</systemSummary>
+    <systemDescription>A collection of platforming, racing, party and sports adventures from the Mushroom Kingdom.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>CD2326</systemColor>
+    <systemColorPalette1>308E44</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

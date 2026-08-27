@@ -1,0 +1,8 @@
+# Operating system files
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+
+# Optional local overrides
+/theme-customizations/

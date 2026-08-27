@@ -1,0 +1,14 @@
+<theme>
+  <variables>
+    <systemName>Final Fantasy Collection</systemName>
+        <systemSummary>Epic role-playing adventures featuring unforgettable worlds, heroes, crystals and stories.</systemSummary>
+    <systemDescription>Epic role-playing adventures featuring unforgettable worlds, heroes, crystals and stories.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>234669</systemColor>
+    <systemColorPalette1>AACDE1</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>
