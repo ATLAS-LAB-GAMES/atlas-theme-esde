@@ -9,7 +9,10 @@ def main():
     base=(Path(__file__).resolve().parent/a.directory).resolve() if not Path(a.directory).is_absolute() else Path(a.directory)
     bad=0; files=sorted(base.glob('*.png'))
     for p in files:
-        im=Image.open(p).convert('RGBA')
+        src=Image.open(p)
+        if src.format != 'PNG':
+            print(f'FAIL {p.name}: encoded as {src.format}, expected PNG'); bad+=1; continue
+        im=src.convert('RGBA')
         if im.size!=CANVAS:
             print(f'FAIL {p.name}: canvas {im.size}'); bad+=1; continue
         bbox=im.getchannel('A').point(lambda v:255 if v>=THRESHOLD else 0).getbbox()

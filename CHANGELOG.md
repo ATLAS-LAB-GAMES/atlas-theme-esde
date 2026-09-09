@@ -1,3 +1,25 @@
+# Changelog
+
+## v0.2.0 — Test Build 5
+
+- Based directly on the RG476H-validated Test Build 4 tree.
+- Normalized the 23 post-Test-4 replacement carousel cards to true 480×360 PNGs.
+- Added full theme assets/metadata for Crash Bandicoot, Spyro the Dragon, Pokemon Hacks and Emulators collections.
+- Added ATLAS variant artwork for 16 active RG476H systems that previously lacked it.
+- Hardened the manual emblem tool and expanded automated tests from 5 to 7.
+- Reworked Collection Progress for ES-DE multi-root gamelists and optional custom-collection aggregation; added tests and local JSON state.
+- Added experimental alternate carousel cards.
+- Updated static validation and cleaned obsolete build artifacts/documentation.
+
+## v0.2.0 — Test Build 4
+
+- Removed unsupported `imageRelativeScale` from `systemcarousel`.
+- Locked the RG476H carousel position at `0.5007 0.7360`.
+- Normalized all original Test Build 4 carousel cards to 480×360.
+- Reduced/repositioned game-view system logo and removed the metadata-row status shield.
+- Unified bottom status plate geometry.
+- Rebuilt the five gamelist backgrounds around the video opening.
+
 ## v0.2.0 — Test Build 2
 
 - Normalized all 222 `_inc/systems/logos-atlas/` assets to a 480x320 canvas with near-full visible card occupancy.

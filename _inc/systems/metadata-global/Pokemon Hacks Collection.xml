@@ -1,0 +1,15 @@
+<theme>
+  <variables>
+    <systemName>Pokemon Hacks Collection</systemName>
+    <gameSystemNameFontSize>0.0190</gameSystemNameFontSize>
+    <systemSummary>A curated library of Pokémon ROM hacks and fan-made adventures built from classic generations.</systemSummary>
+    <systemDescription>A curated library of Pokémon ROM hacks and fan-made adventures built from classic generations.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>822A9D</systemColor>
+    <systemColorPalette1>1F70BE</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

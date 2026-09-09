@@ -1,27 +1,43 @@
-# ATLAS ES-DE v0.2.0 — Test Build 4 checklist
+# ATLAS ES-DE v0.2.0 — Test Build 5 checklist
 
-Test Build 4 is a focused polish build based on RG476H Test Build 3A screenshots.
+Test Build 5 keeps Test Build 4's validated layout and focuses on artwork/tool validation.
 
 ## System View
-- Selected carousel card should have a small, even gap inside the green selection outline on all four sides.
-- Cards should no longer sit low; selected card should be vertically centered in the green outline.
-- All system/collection cards use identical 480x360 full-canvas card geometry.
-- Collection Progress helper remains optional and unchanged from Test Build 3.
+
+- Confirm the carousel still matches Test Build 4 positioning and selection spacing.
+- Check several untouched cards plus the replaced cards (N64, PS1, PS2, GameCube, Dreamcast, Saturn, SNES, PSP and updated collections).
+- Confirm replaced cards are no longer stretched/cropped incorrectly by ES-DE.
+- Check the four new collections appear as independently themed systems.
+- Check new collection backgrounds in Balanced, Dark, Light, Vibrant and Clean.
+- Spot-check the newly added ATLAS backgrounds for GB/GBA/GBC, N64, GameCube, SNES, Wii and 3DS.
 
 ## Game View
-- System logo is 20% smaller than Test 3A and its top should line up with the video plane.
-- No Verified/Playable/Broken shield appears in the metadata icon row.
-- Bottom VERIFIED / PLAYABLE / BROKEN emblems remain.
-- All three bottom status emblems use the exact same position and size.
-- Test both Shelf and Grid.
 
-## Video
-- No black strip should remain above the video.
-- No black strip should remain to the right of the video.
-- Top/right background should flow naturally into the existing background and feather over the video.
-- Existing bottom-left blend is intentionally preserved.
-- Test Balanced/Dark and Light/Clean.
+- Test Shelf and Grid.
+- Confirm no Verified/Playable/Broken shield reappears in the metadata row.
+- Confirm bottom VERIFIED / PLAYABLE / BROKEN plates still share the same geometry.
+- Confirm video top/right closure and bottom-left blend remain identical to Test Build 4.
 
-## Still pending after visual validation
-- Test the optional Collection Progress companion.
-- Test Hack / Mod / Fan Game / Disc 1–6 emblem utility against copied artwork first.
+## Game Emblem Tool
+
+1. Work against copied/safe media first.
+2. Run `--dry-run`.
+3. Test Hack, Mod, Fan Game and Disc 1–6.
+4. Test two emblems on one game.
+5. Remove a row and run `--sync`; confirm pristine artwork returns.
+6. Change a managed image externally and confirm ATLAS refuses to overwrite/restore it.
+
+## Collection Progress
+
+1. Run a dry run against the RG476H ES-DE gamelists.
+2. Apply and restart/reload ES-DE.
+3. Confirm displayed percentages match played game counts.
+4. Point `--collections-root` at ES-DE's collections directory and verify at least one custom collection.
+5. Confirm `tools/progress/state/progress.json` is created after `--apply`.
+
+## Regression
+
+- No black screen entering System View.
+- `systemcarousel` contains no `imageRelativeScale`.
+- All 226 active carousel cards are true 480×360 PNGs.
+- All five gamelist background variants retain their Test Build 4 video opening.

@@ -1,0 +1,15 @@
+<theme>
+  <variables>
+    <systemName>Crash Bandicoot Collection</systemName>
+    <gameSystemNameFontSize>0.0195</gameSystemNameFontSize>
+    <systemSummary>A curated library of Crash Bandicoot platformers, racers and spin-offs across generations.</systemSummary>
+    <systemDescription>A curated library of Crash Bandicoot platformers, racers and spin-offs across generations.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>D95020</systemColor>
+    <systemColorPalette1>1E6FB1</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

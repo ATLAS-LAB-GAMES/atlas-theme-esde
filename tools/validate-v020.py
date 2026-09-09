@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Static validation for ATLAS ES-DE v0.2.0 test builds.
+"""Static validation for ATLAS ES-DE v0.2.0 Test Build 5.
 
 This is not a replacement for ES-DE's strict runtime theme parser. It catches
 well-formedness, static include/asset mistakes, capability mismatches, required
-v0.2.0 files and logo geometry before packaging.
+v0.2.0 files, collection assets and logo geometry before packaging.
 """
 from __future__ import annotations
 import sys
@@ -135,11 +135,11 @@ if common_root is not None:
         c = el.find(child)
         return (c.text or "").strip() if c is not None else None
     if child_text("game-panel", "pos") != "0.026 0.026" or child_text("game-panel", "size") != "0.325 0.500":
-        warn("game info panel geometry differs from Test Build 3 design target")
+        warn("game info panel geometry differs from the validated v0.2.0 design target")
     if child_text("game-video", "pos") != "0.365 0.026" or child_text("game-video", "size") != "0.609 0.500":
-        err("game video geometry differs from Test Build 3 inset media window")
+        err("game video geometry differs from the validated v0.2.0 inset media window")
     if child_text("game-video", "zIndex") != "4":
-        err("game video must render behind the gamelist background in Test Build 3")
+        err("game video must render behind the gamelist background")
     if child_text("game-media-panel", "color") != "00000000":
         err("legacy hard-edged game media panel must remain transparent")
     if child_text("game-description", "container") != "true" or child_text("game-description", "containerType") != "vertical":
@@ -162,12 +162,14 @@ if system_root is not None:
     if len(cars) != 1:
         err("system view must contain exactly one systemcarousel")
     else:
-        if (cars[0].findtext("pos") or "").strip() != "0.5 0.746":
-            warn("system carousel position changed from the locked v0.1.0 geometry")
+        if (cars[0].findtext("pos") or "").strip() != "0.5007 0.7360":
+            err("system carousel position differs from the validated Test Build 4 RG476H geometry")
         if (cars[0].findtext("itemSize") or "").strip() != "0.125 0.125":
-            err("system carousel itemSize must use the Test Build 3 slot-filling geometry")
+            err("system carousel itemSize must use the validated Test Build 4 slot-filling geometry")
         if (cars[0].findtext("imageFit") or "").strip() != "fill":
             err("system carousel imageFit must be fill")
+        if cars[0].find("imageRelativeScale") is not None:
+            err("systemcarousel must not contain imageRelativeScale (known RG476H black-screen trigger)")
 
 # 7. Required files.
 required = [
@@ -186,12 +188,15 @@ for rel in required:
     if not (ROOT/rel).is_file():
         err(f"missing required v0.2.0 file: {rel}")
 
-# 8. Carousel logo canvas geometry and Test Build 3 occupancy.
+# 8. Carousel logo canvas geometry and Test Build 4 occupancy contract.
 logo_dir = ROOT/"_inc/systems/logos-atlas"
 logo_files = sorted(logo_dir.glob("*.png"))
 for path in logo_files:
     try:
         with Image.open(path) as src:
+            if src.format != "PNG":
+                err(f"carousel logo {path.name}: encoded as {src.format}, expected actual PNG")
+                continue
             im=src.convert("RGBA")
             if im.size != (480, 360):
                 err(f"carousel logo {path.name}: {im.size[0]}x{im.size[1]}, expected 480x360")
@@ -245,6 +250,37 @@ for name in ["hack", "mod", "fangame"] + [f"disc{i}" for i in range(1,7)]:
                     warn(f"emblem {name} is not stored with an obvious alpha-capable mode ({im.mode})")
         except Exception as exc:
             err(f"emblem {name} unreadable: {exc}")
+
+
+# 10. Test Build 5 custom collection asset contract.
+new_collections = [
+    "Crash Bandicoot Collection",
+    "Spyro the Dragon Collection",
+    "Pokemon Hacks Collection",
+    "Emulators Collection",
+]
+for name in new_collections:
+    expected = [
+        ROOT/name/"theme.xml",
+        ROOT/"_inc/systems/logos-atlas"/f"{name}.png",
+        ROOT/"_inc/systems/logos"/f"{name}.webp",
+        ROOT/"_inc/systems/system-logos"/f"{name}.png",
+        ROOT/"_inc/systems/titles"/f"{name}.png",
+        ROOT/"_inc/systems/artwork (modern)"/f"{name}.webp",
+        ROOT/"_inc/systems/metadata-global"/f"{name}.xml",
+    ]
+    expected += [ROOT/"_inc/systems/artwork (atlas)"/v/f"{name}.webp" for v in ("balanced","dark","light","vibrant","clean")]
+    for item in expected:
+        if not item.is_file():
+            err(f"new collection {name}: missing {item.relative_to(ROOT)}")
+
+# 11. Manual helper tests must be present.
+for rel in (
+    "tools/emblems/tests/test_atlas_emblems.py",
+    "tools/progress/tests/test_atlas_progress.py",
+):
+    if not (ROOT/rel).is_file():
+        err(f"missing Test Build 5 helper test: {rel}")
 
 print(f"XML files parsed: {len(parsed)}/{len(xml_files)}")
 print(f"Carousel PNGs checked: {len(logo_files)}")

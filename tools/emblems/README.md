@@ -1,29 +1,19 @@
-# ATLAS Game Emblem Tool — v0.2.0 build 1
+# ATLAS Game Emblem Tool — v0.2.0 Test Build 5
 
-This optional companion utility adds ATLAS-styled corner emblems to ES-DE scraped artwork while preserving the original image. It runs **outside ES-DE**; the theme itself continues to request ordinary `3dbox` media, so decorated art works in both **ATLAS Shelf** and **ATLAS Grid** without a second-media lookup.
+This optional **manual** companion utility adds ATLAS-styled corner emblems to ES-DE scraped artwork while preserving pristine originals. The active theme still requests ordinary media such as `3dbox`, so decorated artwork works in both ATLAS Shelf and ATLAS Grid.
 
-Initial emblem set:
+Supported emblems:
 
 - `hack` — red
 - `mod` — blue
 - `fangame` — blue
 - `disc1` through `disc6` — neutral grey
 
-## Dependency
-
-Python 3 and Pillow are required. Examples:
-
-```bash
-# AlmaLinux / RHEL if python3-pillow is available in your enabled repositories
-sudo dnf install python3-pillow
-
-# Or in a Python virtual environment
-python3 -m pip install Pillow
-```
+Python 3 and Pillow are required.
 
 ## CSV
 
-Copy `atlas-emblems.csv.example` to `atlas-emblems.csv` and edit it:
+Edit `atlas-emblems.csv` using this format:
 
 ```csv
 SYSTEM,GAME,IMAGE_TYPE,EMBLEM_TYPE,ACTION,POSITION
@@ -31,57 +21,48 @@ n64,"Super Smash Bros [Hack v1.2]",3dbox,hack,add,top-right
 psx,"Final Fantasy VII (Disc 2)",3dbox,disc2,add,top-right
 ```
 
-`POSITION` may be `top-right`, `top-left`, `bottom-right`, or `bottom-left`. Multiple `add` rows for the same game are supported and are stacked inward from the selected corner.
+`POSITION` can be `top-right`, `top-left`, `bottom-right`, or `bottom-left`. Multiple emblems on one game are supported and stack inward from the selected corner.
 
-## Safe workflow
+## Recommended manual workflow
 
-Always start with a dry run:
+Always dry-run first:
 
 ```bash
 python3 atlas-emblems.py \
   --media-root /path/to/ES-DE/downloaded_media \
+  --gamelists-root /path/to/ES-DE/gamelists \
   --dry-run
 ```
 
-Then synchronize the artwork:
+Then synchronize:
 
 ```bash
 python3 atlas-emblems.py \
   --media-root /path/to/ES-DE/downloaded_media \
+  --gamelists-root /path/to/ES-DE/gamelists \
   --sync
 ```
 
-`--sync` treats all `ACTION=add` rows as the desired state. If a previously managed game is removed from the CSV, its pristine original is restored automatically.
+`--sync` treats all `ACTION=add` rows as the desired state. Removing a previously managed game from the CSV restores its pristine original.
 
-`--apply` instead performs only the explicit ADD/REMOVE rows and does not prune managed games that are absent from the CSV.
+`--apply` applies only explicit ADD/REMOVE rows and leaves managed games not mentioned in the CSV alone.
 
 Restore everything managed by ATLAS:
 
 ```bash
-python3 atlas-emblems.py \
-  --media-root /path/to/ES-DE/downloaded_media \
-  --restore-all
+python3 atlas-emblems.py --media-root /path/to/ES-DE/downloaded_media --restore-all
 ```
 
-## Backups and re-scrapes
+## Backups and safety
 
-The first time a media file is decorated, its pristine bytes are copied under:
+The first time an image is decorated, its original bytes are copied under:
 
 ```text
 MEDIA_ROOT/.atlas-emblems/backups/
 ```
 
-A SHA-256 manifest tracks both the pristine and generated files. If a scraper or another program changes a managed image, ATLAS refuses to overwrite it. Inspect the new image first, then use `--refresh-backup` on the next apply/sync if you want that new file to become the pristine source.
+`manifest.json` stores SHA-256 hashes for both the original and ATLAS-generated files. Test Build 5 also hash-checks **restore operations**, so a re-scraped or externally modified image is not silently overwritten by an old backup.
 
-## Display-name lookup
+If an image was intentionally re-scraped and you want it to become the new pristine source before another render, inspect it first and use `--refresh-backup` with an apply/sync operation.
 
-Direct media-filename matching is attempted first. If your CSV uses the scraped display name rather than the ROM/media filename, optionally point the tool at your ROM root containing `SYSTEM/gamelist.xml` files:
-
-```bash
-python3 atlas-emblems.py \
-  --media-root /path/to/downloaded_media \
-  --gamelist-root /path/to/ROMs \
-  --dry-run
-```
-
-The tool refuses ambiguous matches rather than guessing.
+Display-name lookup first tries media filenames directly, then can use the optional ES-DE gamelist directory (`--gamelists-root`) to resolve a scraped display name back to its ROM/media stem. Ambiguous matches are refused rather than guessed.

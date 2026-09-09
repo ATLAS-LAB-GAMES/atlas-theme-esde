@@ -84,6 +84,17 @@ class AtlasEmblemTests(unittest.TestCase):
         self.assertEqual(h(self.target),self.original_hash)
         self.assertFalse((self.state/"manifest.json").exists())
 
+    def test_display_name_lookup_handles_alternative_emulator_sibling(self):
+        glroot=self.root / "gamelists" / "n64"
+        glroot.mkdir(parents=True)
+        (glroot / "gamelist.xml").write_text(
+            '<?xml version="1.0"?>\n<alternativeEmulator><label>Standalone</label></alternativeEmulator>\n'
+            '<gameList><game><path>./Super Smash Bros [Hack v1.2].zip</path><name>Smash Hack Display</name></game></gameList>'
+        )
+        self.target.rename(self.media_dir / "Super Smash Bros [Hack v1.2].png")
+        resolved=mod.resolve_media(self.media,"n64","Smash Hack Display","3dbox",self.root / "gamelists")
+        self.assertEqual(resolved.name,"Super Smash Bros [Hack v1.2].png")
+
     def test_multiple_emblems_are_recorded(self):
         self.write_rows([
             ["n64","Super Smash Bros [Hack v1.2]","3dbox","hack","add","top-right"],
@@ -94,6 +105,21 @@ class AtlasEmblemTests(unittest.TestCase):
         rec=next(iter(manifest["records"].values()))
         self.assertEqual([x["emblem"] for x in rec["emblems"]],["hack","disc2"])
 
+
+    def test_restore_refuses_external_change(self):
+        self.write_rows([["n64","Super Smash Bros [Hack v1.2]","3dbox","hack","add","top-right"]])
+        mod.execute(self.args("sync"))
+        Image.new("RGBA",(600,900),(1,2,3,255)).save(self.target)
+        with self.assertRaises(RuntimeError):
+            mod.execute(self.args("restore"))
+
+    def test_sync_prune_refuses_external_change(self):
+        self.write_rows([["n64","Super Smash Bros [Hack v1.2]","3dbox","hack","add","top-right"]])
+        mod.execute(self.args("sync"))
+        Image.new("RGBA",(600,900),(9,8,7,255)).save(self.target)
+        self.write_rows([])
+        with self.assertRaises(RuntimeError):
+            mod.execute(self.args("sync"))
     def test_external_change_is_refused(self):
         self.write_rows([["n64","Super Smash Bros [Hack v1.2]","3dbox","hack","add","top-right"]])
         mod.execute(self.args("sync"))

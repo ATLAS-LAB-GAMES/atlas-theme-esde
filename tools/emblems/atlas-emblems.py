@@ -34,7 +34,7 @@ except ImportError as exc:  # pragma: no cover - user-facing dependency path
         "Pillow is required. Install it with your OS package manager or 'python3 -m pip install Pillow'."
     ) from exc
 
-VERSION = "0.2.0-build2"
+VERSION = "0.2.0-build3"
 SUPPORTED_EMBLEMS = {
     "hack", "mod", "fangame",
     "disc1", "disc2", "disc3", "disc4", "disc5", "disc6",
@@ -86,6 +86,17 @@ def image_files(directory: Path) -> List[Path]:
     return sorted(p for p in directory.iterdir() if p.is_file() and p.suffix.casefold() in IMAGE_EXTS)
 
 
+
+def gamelist_games(path: Path):
+    """Return game nodes from standard or ES-DE multi-root gamelist fragments."""
+    text=path.read_text(encoding="utf-8-sig", errors="replace")
+    text=re.sub(r"^\s*<\?xml[^>]*\?>", "", text, count=1, flags=re.I)
+    try:
+        wrapped=ET.fromstring("<atlasRoot>" + text + "</atlasRoot>")
+    except ET.ParseError as e:
+        raise RuntimeError(f"could not parse {path}: {e}") from e
+    return wrapped.findall("./gameList/game") or wrapped.findall("./game")
+
 def gamelist_rom_stem(gamelist_root: Path | None, system: str, game: str) -> str | None:
     if not gamelist_root:
         return None
@@ -93,12 +104,8 @@ def gamelist_rom_stem(gamelist_root: Path | None, system: str, game: str) -> str
     gl = next((p for p in candidates if p.is_file()), None)
     if gl is None:
         return None
-    try:
-        tree = ET.parse(gl)
-    except ET.ParseError as e:
-        raise RuntimeError(f"could not parse {gl}: {e}") from e
     exact=[]; normalized=[]
-    for node in tree.findall(".//game"):
+    for node in gamelist_games(gl):
         name=(node.findtext("name") or "").strip()
         path=(node.findtext("path") or "").strip()
         if not name or not path:
@@ -298,11 +305,28 @@ def ensure_backup(media_root: Path, state_root: Path, target: Path, manifest: di
     return key,rec
 
 
+def verify_managed_target(media_root: Path, key: str, rec: dict) -> str:
+    """Return current hash after confirming a managed target was not changed externally."""
+    target=media_root/key
+    if not target.is_file():
+        raise RuntimeError(f"managed media is missing: {target}")
+    current=sha256(target)
+    allowed={rec.get("generated_sha256"),rec.get("original_sha256")}
+    allowed.discard(None)
+    if current not in allowed:
+        raise RuntimeError(
+            f"media changed outside ATLAS since last run: {target}\n"
+            "Refusing to restore/overwrite it. Inspect or re-scrape as needed before continuing."
+        )
+    return current
+
+
 def restore_record(media_root: Path, state_root: Path, key: str, rec: dict, dry_run: bool=False) -> None:
     target=media_root/key
     bp=state_root/rec["backup_rel"]
     if not bp.is_file():
         raise RuntimeError(f"cannot restore {key}: backup missing at {bp}")
+    verify_managed_target(media_root,key,rec)
     if not dry_run:
         target.parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(bp,target)
@@ -430,8 +454,8 @@ def parser() -> argparse.ArgumentParser:
                     help="directory containing emblem PNG files")
     ap.add_argument("--state-root", type=Path,
                     help="backup/manifest directory (default: MEDIA_ROOT/.atlas-emblems)")
-    ap.add_argument("--gamelist-root", type=Path,
-                    help="optional ROM root containing SYSTEM/gamelist.xml for display-name resolution")
+    ap.add_argument("--gamelist-root", "--gamelists-root", dest="gamelist_root", type=Path,
+                    help="optional ES-DE gamelists directory containing SYSTEM/gamelist.xml for display-name resolution")
     group=ap.add_mutually_exclusive_group(required=True)
     group.add_argument("--dry-run", action="store_true", help="show a sync plan without changing files")
     group.add_argument("--sync", action="store_true", help="make ADD rows the authoritative desired state")

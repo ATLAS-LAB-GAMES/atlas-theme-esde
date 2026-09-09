@@ -1,12 +1,20 @@
-# ATLAS system logo standard — v0.2.0
+# ATLAS carousel card standard — v0.2.0 Test Build 5
 
-The system carousel itself keeps the v0.1.0 geometry. Artwork should target a consistent **480×320** transparent canvas with a **360×240** card/visual footprint placed at **x=60, y=40**. Keep the actual system mark comfortably inside the card (roughly 300×145 is a good starting safe area), preserve aspect ratio, and never stretch a logo.
+The active system carousel card contract is:
 
-For this first v0.2.0 build, transparent/inconsistently sized `logos-atlas` entries were given a first-pass graphite + system-accent card so they remain legible in both light and dark color schemes. Existing card artwork was intentionally left intact for manual refinement. Originals changed by this build are retained in `_inc/systems/logos-atlas-v010-original/`.
+- **480 × 360 pixels**
+- **actual PNG encoding** for every file in `_inc/systems/logos-atlas/`
+- full-canvas card occupancy; transparent rounded corners are fine
+- no additional theme-side scaling property inside `systemcarousel`
 
-Audit the directory with:
+Test Build 4 normalized every card to this geometry. Test Build 5 keeps that contract and converts the newer manually replaced cards from 480×320/mixed PNG-WebP content into true 480×360 PNGs.
+
+Audit the active directory with:
 
 ```bash
-cd tools/logos
-python3 atlas-logo-audit.py
+python3 tools/logos/atlas-logo-audit.py
 ```
+
+`atlas-logo-normalize.py` remains available for manually normalizing a directory of replacement cards. It crops meaningful alpha content and stretches the result to the 480×360 carousel canvas, matching the Test Build 4 normalization behavior.
+
+Experimental alternatives live in `_inc/systems/logos-atlas-alt/` and are not referenced by the active theme.
