@@ -1,0 +1,32 @@
+<theme>
+  <include>./atlas-gamelist-common.xml</include>
+  <view name="gamelist">
+    <carousel name="game-carousel">
+      <origin>0 0</origin>
+      <pos>0 0.535</pos>
+      <size>1 0.375</size>
+      <type>horizontal</type>
+      <itemSize>0.180 0.290</itemSize>
+      <itemScale>1.16</itemScale>
+      <maxItemCount>5.3</maxItemCount>
+      <imageType>3dbox</imageType>
+      <imageFit>contain</imageFit>
+      <itemVerticalAlignment>center</itemVerticalAlignment>
+      <selectedItemMargins>0.018 0.018</selectedItemMargins>
+      <unfocusedItemOpacity>${unfocusedOpacity}</unfocusedItemOpacity>
+      <unfocusedItemSaturation>${unfocusedSaturation}</unfocusedItemSaturation>
+      <unfocusedItemDimming>${unfocusedDimming}</unfocusedItemDimming>
+      <itemTransitions>animate</itemTransitions>
+      <fastScrolling>true</fastScrolling>
+      <color>00000000</color>
+      <textColor>${mutedTextColor}</textColor>
+      <textSelectedColor>${titleColor}</textSelectedColor>
+      <textBackgroundColor>00000000</textBackgroundColor>
+      <textSelectedBackgroundColor>00000000</textSelectedBackgroundColor>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.020</fontSize>
+      <textRelativeScale>0.80</textRelativeScale>
+      <zIndex>20</zIndex>
+    </carousel>
+  </view>
+</theme>

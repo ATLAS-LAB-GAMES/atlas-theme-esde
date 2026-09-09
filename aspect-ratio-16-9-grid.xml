@@ -1,0 +1,17 @@
+<theme>
+  <!-- Widescreen: smaller horizontal item footprint targets roughly five columns. -->
+  <view name="system">
+    <carousel name="systemcarousel">
+      <size>0.968 0.145</size>
+      <maxItemCount>7</maxItemCount>
+      <itemSize>0.125 0.125</itemSize>
+      <itemScale>1.045</itemScale>
+    </carousel>
+  </view>
+  <view name="gamelist">
+    <grid name="game-grid">
+      <itemSize>0.135 0.170</itemSize>
+      <itemSpacing>0.040 0.018</itemSpacing>
+    </grid>
+  </view>
+</theme>

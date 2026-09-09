@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Now Playing</systemName>
+        <gameSystemNameFontSize>0.0340</gameSystemNameFontSize>
         <systemSummary>Play and complete the games on your backlog.</systemSummary>
         <systemDescription>Play and complete the games on your backlog.</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

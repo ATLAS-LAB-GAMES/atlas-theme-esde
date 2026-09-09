@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Vircon32</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>Vircon32 is a virtual console inspired by classic 16- and 32-bit systems as well as the arcade era.</systemSummary>
         <systemDescription>Vircon32 is a virtual console inspired by classic 16- and 32-bit systems as well as the arcade era.</systemDescription>
         <systemManufacturer>Carra</systemManufacturer>

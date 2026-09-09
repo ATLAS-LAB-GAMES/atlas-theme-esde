@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Desktop Shorcuts</systemName>
+        <gameSystemNameFontSize>0.0220</gameSystemNameFontSize>
         <systemSummary>View and run your Desktop shortcuts</systemSummary>
         <systemDescription>View and run your Desktop shortcuts</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Neo Geo Pocket</systemName>
+        <gameSystemNameFontSize>0.0260</gameSystemNameFontSize>
         <systemSummary>The Neo Geo Pocket is a monochrome handheld game console released by SNK. It was the company's first handheld system and is part of the Neo Geo family.</systemSummary>
         <systemDescription>The Neo Geo Pocket is a monochrome handheld game console released by SNK. It was the company's first handheld system and is part of the Neo Geo family. It debuted in Japan in late 1998 but never saw an American release, being exclusive to Japan, Asia and Europe.
 

@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Taito Type X</systemName>
+        <gameSystemNameFontSize>0.0340</gameSystemNameFontSize>
         <systemSummary>The Taito Type X is an arcade system board released in 2004 by game developer and publisher Taito.</systemSummary>
         <systemDescription>The Taito Type X is an arcade system board released in 2004 by game developer and publisher Taito.
 

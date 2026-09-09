@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Pokemon Collection</systemName>
+        <gameSystemNameFontSize>0.0200</gameSystemNameFontSize>
         <systemSummary>A dedicated library of creature-catching adventures, battles and journeys across generations.</systemSummary>
     <systemDescription>A dedicated library of creature-catching adventures, battles and journeys across generations.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Hogwarts Collection</systemName>
+        <gameSystemNameFontSize>0.0200</gameSystemNameFontSize>
         <systemSummary>Magical adventures, mysteries and journeys through the wizarding world and Hogwarts.</systemSummary>
     <systemDescription>Magical adventures, mysteries and journeys through the wizarding world and Hogwarts.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

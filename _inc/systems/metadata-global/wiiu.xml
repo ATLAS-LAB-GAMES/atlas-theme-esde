@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Wii U</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>The Wii U (WEE YOO) is a home video game console developed by Nintendo as the successor to the Wii.</systemSummary>
         <systemDescription>The Wii U (WEE YOO) is a home video game console developed by Nintendo as the successor to the Wii. Released in late 2012, it is the first eighth-generation video game console and competed with Microsoft's Xbox One and Sony's PlayStation 4.
 

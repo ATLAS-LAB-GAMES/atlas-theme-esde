@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Mario Collection</systemName>
+        <gameSystemNameFontSize>0.0240</gameSystemNameFontSize>
         <systemSummary>A collection of platforming, racing, party and sports adventures from the Mushroom Kingdom.</systemSummary>
     <systemDescription>A collection of platforming, racing, party and sports adventures from the Mushroom Kingdom.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

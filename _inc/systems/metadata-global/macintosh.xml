@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Macintosh</systemName>
+        <gameSystemNameFontSize>0.0400</gameSystemNameFontSize>
         <systemSummary>The Macintosh (mainly Mac since 1998) is a family of personal computers designed, manufactured, and sold by Apple Inc. (originally as Apple Computer, Inc.) since January 1984.</systemSummary>
         <systemDescription>The Macintosh (mainly Mac since 1998) is a family of personal computers designed, manufactured, and sold by Apple Inc. (originally as Apple Computer, Inc.) since January 1984.
 

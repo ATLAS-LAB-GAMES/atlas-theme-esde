@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Sega Saturn</systemName>
+        <gameSystemNameFontSize>0.0340</gameSystemNameFontSize>
         <systemSummary>The Sega Saturn is a home video game console developed by Sega and released on November 22, 1994 in Japan, May 11, 1995 in North America, and July 8, 1995 in Europe.</systemSummary>
         <systemDescription>The Sega Saturn is a home video game console developed by Sega and released on November 22, 1994 in Japan, May 11, 1995 in North America, and July 8, 1995 in Europe. Part of the fifth generation of video game consoles, it was the successor to the successful Sega Genesis. The Saturn has a dual-CPU architecture and eight processors. Its games are in CD-ROM format, and its game library contains several ports of arcade games as well as original games.
 

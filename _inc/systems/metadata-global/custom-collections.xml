@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Custom Collections</systemName>
+        <gameSystemNameFontSize>0.0200</gameSystemNameFontSize>
         <systemSummary>Organize your games into custom collections.</systemSummary>
         <systemDescription>Organize your games into custom collections.</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Jurassic Park Collection</systemName>
+        <gameSystemNameFontSize>0.0200</gameSystemNameFontSize>
         <systemSummary>Games of survival, exploration and prehistoric adventure inspired by Jurassic Park.</systemSummary>
     <systemDescription>Games of survival, exploration and prehistoric adventure inspired by Jurassic Park.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

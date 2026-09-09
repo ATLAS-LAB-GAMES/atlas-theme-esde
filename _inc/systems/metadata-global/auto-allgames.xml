@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>All Games</systemName>
+        <gameSystemNameFontSize>0.0420</gameSystemNameFontSize>
         <systemSummary>View and play every game across your entire library.</systemSummary>
         <systemDescription>View and play every game across your entire library.</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

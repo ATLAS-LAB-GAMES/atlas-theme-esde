@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Middle Earth Collection</systemName>
+        <gameSystemNameFontSize>0.0200</gameSystemNameFontSize>
         <systemSummary>A curated journey through games inspired by the realms, heroes and legends of Middle-earth.</systemSummary>
     <systemDescription>A curated journey through games inspired by the realms, heroes and legends of Middle-earth.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

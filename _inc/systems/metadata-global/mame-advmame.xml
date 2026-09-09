@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>AdvanceMAME</systemName>
+        <gameSystemNameFontSize>0.0300</gameSystemNameFontSize>
         <systemSummary>AdvanceMAME, is a port of the MAME 0.106 and MESS 0.106 emulators for Arcade Monitors and TVs but also for LCDs and PC monitors.</systemSummary>
         <systemDescription>AdvanceMAME, is a port of the MAME 0.106 and MESS 0.106 emulators for Arcade Monitors and TVs but also for LCDs and PC monitors.</systemDescription>
         <systemManufacturer>MAME</systemManufacturer>

@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>MAME</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>MAME (formerly an acronym of Multiple Arcade Machine Emulator) is a free and open-source emulator designed to recreate the hardware of arcade game systems in software on modern personal computers and other platforms.</systemSummary>
         <systemDescription>MAME (formerly an acronym of Multiple Arcade Machine Emulator) is a free and open-source emulator designed to recreate the hardware of arcade game systems in software on modern personal computers and other platforms. Its intention is to preserve gaming history by preventing vintage games from being lost or forgotten. It does this by emulating the inner workings of the emulated arcade machines; the ability to actually play the games is considered "a nice side effect". Joystiq has listed MAME as an application that every Windows and Mac gamer should have.
 

@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>EA Sports Collection</systemName>
+        <gameSystemNameFontSize>0.0200</gameSystemNameFontSize>
         <systemSummary>A collection of classic and modern sports experiences spanning leagues, eras and platforms.</systemSummary>
     <systemDescription>A collection of classic and modern sports experiences spanning leagues, eras and platforms.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

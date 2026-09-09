@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>PlayStation 2</systemName>
+        <gameSystemNameFontSize>0.0300</gameSystemNameFontSize>
         <systemSummary>The PlayStation 2 (PS2) is a home video game console developed and marketed by Sony Computer Entertainment.</systemSummary>
         <systemDescription>The PlayStation 2 (PS2) is a home video game console developed and marketed by Sony Computer Entertainment. It was first released in Japan on March 4, 2000, in North America on October 26, 2000, in Europe on November 24, 2000, and Australia on November 24, 2000. It is the successor to the original PlayStation, as well as the second installment in the PlayStation console line-up. A sixth-generation console, it competed with Sega's Dreamcast, Nintendo's GameCube, and Microsoft's original Xbox.
 

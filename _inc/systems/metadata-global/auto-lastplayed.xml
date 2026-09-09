@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Last Played</systemName>
+        <gameSystemNameFontSize>0.0340</gameSystemNameFontSize>
         <systemSummary>View your recently played games across the entire library.</systemSummary>
         <systemDescription>View your recently played games across the entire library.</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

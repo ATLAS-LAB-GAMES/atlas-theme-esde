@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Digimon Collection</systemName>
+        <gameSystemNameFontSize>0.0220</gameSystemNameFontSize>
         <systemSummary>Digital-world adventures featuring partners, evolution, battles and exploration.</systemSummary>
     <systemDescription>Digital-world adventures featuring partners, evolution, battles and exploration.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

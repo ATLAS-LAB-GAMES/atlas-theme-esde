@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Completed</systemName>
+        <gameSystemNameFontSize>0.0380</gameSystemNameFontSize>
         <systemSummary>Keep track of the games you've finished.</systemSummary>
         <systemDescription>Keep track of the games you've finished.</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

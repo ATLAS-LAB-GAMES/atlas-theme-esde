@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Zelda Collection</systemName>
+        <gameSystemNameFontSize>0.0240</gameSystemNameFontSize>
         <systemSummary>A collection of heroic adventures, ancient legends, puzzles and journeys through Hyrule and beyond.</systemSummary>
     <systemDescription>A collection of heroic adventures, ancient legends, puzzles and journeys through Hyrule and beyond.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

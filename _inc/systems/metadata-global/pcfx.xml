@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>PC-FX</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>The PC-FX is a 32-bit home video game console developed by both NEC and Hudson Soft and released in Japan in 1994.</systemSummary>
         <systemDescription>The PC-FX is a 32-bit home video game console developed by both NEC and Hudson Soft and released in Japan in 1994. Powered by an NEC V810 CPU and using CD-ROMs, the PC-FX was intended as the successor to the PC Engine and its international counterpart the TurboGrafx-16, two successful video game consoles from the late 1980s. It is NEC's final foray into the home console market.
 

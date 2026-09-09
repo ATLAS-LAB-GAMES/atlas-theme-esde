@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Final Fantasy Collection</systemName>
+        <gameSystemNameFontSize>0.0200</gameSystemNameFontSize>
         <systemSummary>Epic role-playing adventures featuring unforgettable worlds, heroes, crystals and stories.</systemSummary>
     <systemDescription>Epic role-playing adventures featuring unforgettable worlds, heroes, crystals and stories.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>
