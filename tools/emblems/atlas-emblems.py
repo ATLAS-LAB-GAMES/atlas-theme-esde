@@ -34,7 +34,7 @@ except ImportError as exc:  # pragma: no cover - user-facing dependency path
         "Pillow is required. Install it with your OS package manager or 'python3 -m pip install Pillow'."
     ) from exc
 
-VERSION = "0.2.0-build4"
+VERSION = "0.2.0-build5"
 SUPPORTED_EMBLEMS = {
     "hack", "mod", "fangame",
     "disc1", "disc2", "disc3", "disc4", "disc5", "disc6",
