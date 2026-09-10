@@ -158,6 +158,16 @@
       <metadataElement>true</metadataElement>
       <zIndex>10</zIndex>
     </image>
+    <image name="meta-playtime-on">
+      <origin>0 0.5</origin>
+      <pos>0.081 0.230</pos>
+      <size>0.024 0.024</size>
+      <path>./_inc/atlas/ui/transparent.png</path>
+      <gameOverridePath>./_inc/atlas/metadata-overrides/played</gameOverridePath>
+      <color>${accentColor}</color>
+      <metadataElement>true</metadataElement>
+      <zIndex>11</zIndex>
+    </image>
     <image name="meta-completed-off">
       <origin>0 0.5</origin>
       <pos>0.119 0.230</pos>
@@ -181,15 +191,6 @@
       <pos>0.195 0.230</pos>
       <size>0.024 0.024</size>
       <path>./_inc/atlas/ui/metadata-icons/manual.svg</path>
-      <color>${badgeInactiveColor}</color>
-      <metadataElement>true</metadataElement>
-      <zIndex>10</zIndex>
-    </image>
-    <image name="meta-rating-off">
-      <origin>0 0.5</origin>
-      <pos>0.233 0.230</pos>
-      <size>0.024 0.024</size>
-      <path>./_inc/atlas/ui/metadata-icons/rating.svg</path>
       <color>${badgeInactiveColor}</color>
       <metadataElement>true</metadataElement>
       <zIndex>10</zIndex>

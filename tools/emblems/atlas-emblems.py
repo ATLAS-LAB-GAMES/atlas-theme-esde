@@ -34,7 +34,7 @@ except ImportError as exc:  # pragma: no cover - user-facing dependency path
         "Pillow is required. Install it with your OS package manager or 'python3 -m pip install Pillow'."
     ) from exc
 
-VERSION = "0.2.0-build3"
+VERSION = "0.2.0-build4"
 SUPPORTED_EMBLEMS = {
     "hack", "mod", "fangame",
     "disc1", "disc2", "disc3", "disc4", "disc5", "disc6",
@@ -229,38 +229,87 @@ def save_image_atomic(image: Image.Image, destination: Path) -> None:
     finally:
         if tmp.exists(): tmp.unlink()
 
-
 def render_from_backup(target: Path, backup: Path, emblems: List[dict], emblem_root: Path) -> None:
-    base=Image.open(backup).convert("RGBA")
-    W,H=base.size
-    margin=max(4,round(W*0.024))
-    gap=max(3,round(W*0.012))
+    base = Image.open(backup).convert("RGBA")
+    W, H = base.size
+
+    margin = max(4, round(W * 0.024))
+    gap = max(3, round(W * 0.012))
+
     # Keep labels readable but small enough not to dominate box art.
-    target_w=max(80,round(W*0.31))
-    grouped=defaultdict(list)
+    target_w = max(80, round(W * 0.31))
+
+    # ES-DE 3D box images commonly contain transparent/unused headroom
+    # around the rendered case. 3D-box artwork therefore starts the
+    # emblem stack lower than flat cover artwork.
+    is_3dbox = target.parent.name.casefold() in {"3dbox", "3dboxes"}
+
+    grouped = defaultdict(list)
+
     for e in emblems:
         grouped[e["position"]].append(e)
-    for position,items in grouped.items():
-        offset=0
+
+    for position, items in grouped.items():
+        offset = 0
+        stack_inset = None
+
         for e in items:
-            ep=emblem_root/f"{e['emblem']}.png"
+            ep = emblem_root / f"{e['emblem']}.png"
+
             if not ep.is_file():
                 raise FileNotFoundError(f"emblem asset not found: {ep}")
-            badge=Image.open(ep).convert("RGBA")
-            scale=target_w/badge.width
-            badge=badge.resize((target_w,max(1,round(badge.height*scale))),Image.Resampling.LANCZOS)
-            if position.startswith("top"):
-                y=margin+offset
-            else:
-                y=H-margin-badge.height-offset
-            if position.endswith("right"):
-                x=W-margin-badge.width
-            else:
-                x=margin
-            base.alpha_composite(badge,(x,y))
-            offset += badge.height+gap
-    save_image_atomic(base,target)
 
+            badge = Image.open(ep).convert("RGBA")
+
+            scale = target_w / badge.width
+            badge = badge.resize(
+                (
+                    target_w,
+                    max(1, round(badge.height * scale)),
+                ),
+                Image.Resampling.LANCZOS,
+            )
+
+            # Calculate the initial stack inset once.
+            #
+            # Flat artwork:
+            #   Starts at the normal margin.
+            #
+            # Standard/wider 3D-box artwork:
+            #   Starts 1.5 emblem heights lower.
+            #
+            # Narrow/tall 3D-box artwork:
+            #   Starts 2.0 emblem heights lower because these renders tend to
+            #   contain substantially more transparent headroom above the case.
+            if stack_inset is None:
+                if is_3dbox:
+                    aspect_ratio = W / H
+
+                    if aspect_ratio <= 0.60:
+                        stack_inset = round(badge.height * 2.0) + gap
+                    else:
+                        stack_inset = round(badge.height * 1.5) + gap
+                else:
+                    stack_inset = 0
+
+            slot_offset = stack_inset + offset
+
+            if position.startswith("top"):
+                y = margin + slot_offset
+            else:
+                y = H - margin - badge.height - slot_offset
+
+            if position.endswith("right"):
+                x = W - margin - badge.width
+            else:
+                x = margin
+
+            base.alpha_composite(badge, (x, y))
+
+            # Normal spacing for every subsequent emblem.
+            offset += badge.height + gap
+
+    save_image_atomic(base, target)
 
 def relative_key(media_root: Path, target: Path) -> str:
     try:
