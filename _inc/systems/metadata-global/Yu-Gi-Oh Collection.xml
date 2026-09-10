@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Yu-Gi-Oh Collection</systemName>
+        <gameSystemNameFontSize>0.0220</gameSystemNameFontSize>
         <systemSummary>Dueling, deck-building and strategy games from the world of Yu-Gi-Oh.</systemSummary>
     <systemDescription>Dueling, deck-building and strategy games from the world of Yu-Gi-Oh.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

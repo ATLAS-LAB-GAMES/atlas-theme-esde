@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Commodore Plus/4</systemName>
+        <gameSystemNameFontSize>0.0220</gameSystemNameFontSize>
         <systemSummary>The Commodore Plus/4 is a home computer released by Commodore International in 1984.</systemSummary>
         <systemDescription>The Commodore Plus/4 is a home computer released by Commodore International in 1984. The "Plus/4" name refers to the four-application ROM-resident office suite (word processor, spreadsheet, database, and graphing); it was billed as "the productivity computer with software built in".
 

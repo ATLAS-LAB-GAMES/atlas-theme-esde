@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Naomi 2</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>The Sega NAOMI 2 is an arcade board developed by Sega and is a successor to Sega NAOMI hardware. It was originally released in 2000.</systemSummary>
         <systemDescription>The Sega NAOMI 2 is an arcade board developed by Sega and is a successor to Sega NAOMI hardware. It was originally released in 2000. Since it uses similar NAOMI architecture (but significantly beefed up), it is also fully backwards compatible with its predecessor.
 

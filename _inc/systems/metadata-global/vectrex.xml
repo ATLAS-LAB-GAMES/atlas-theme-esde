@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Vectrex</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>The Vectrex is a vector display-based home video game console–the only one ever designed and released for the home market, developed by Smith Engineering.</systemSummary>
         <systemDescription>The Vectrex is a vector display-based home video game console–the only one ever designed and released for the home market, developed by Smith Engineering. It was first released for the North America market in November 1982 and then Europe and Japan in 1983. Originally manufactured by General Consumer Electronics, it was later licensed to Milton Bradley after they acquired the company. Bandai released the system in Japan.
 

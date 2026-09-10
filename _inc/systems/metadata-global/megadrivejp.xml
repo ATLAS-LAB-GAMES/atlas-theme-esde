@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Mega Drive</systemName>
+        <gameSystemNameFontSize>0.0380</gameSystemNameFontSize>
         <systemSummary>The Mega Drive is a 16-bit fourth-generation home video game console developed and sold by Sega. It's Sega's third console and the successor to the Master System.</systemSummary>
         <systemDescription>The Mega Drive is a 16-bit fourth-generation home video game console developed and sold by Sega. It's Sega's third console and the successor to the Master System. The Mega Drive was adapted from Sega's System 16 arcade board.</systemDescription>
         <systemManufacturer>Sega</systemManufacturer>

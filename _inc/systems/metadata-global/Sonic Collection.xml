@@ -1,6 +1,7 @@
 <theme>
   <variables>
     <systemName>Sonic Collection</systemName>
+        <gameSystemNameFontSize>0.0240</gameSystemNameFontSize>
         <systemSummary>High-speed platforming, racing and action adventures from the blue blur and friends.</systemSummary>
     <systemDescription>High-speed platforming, racing and action adventures from the blue blur and friends.</systemDescription>
     <systemManufacturer>ATLAS Collection</systemManufacturer>

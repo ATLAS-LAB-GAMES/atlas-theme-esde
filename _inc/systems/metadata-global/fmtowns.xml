@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>FM Towns</systemName>
+        <gameSystemNameFontSize>0.0440</gameSystemNameFontSize>
         <systemSummary>The FM Towns (Japanese: エフエムタウンズ, Hepburn: Efu Emu Taunzu) is a Japanese personal computer built by Fujitsu from February 1989 to the summer of 1997.</systemSummary>
         <systemDescription>The FM Towns (Japanese: エフエムタウンズ, Hepburn: Efu Emu Taunzu) is a Japanese personal computer built by Fujitsu from February 1989 to the summer of 1997. It started as a proprietary PC variant intended for multimedia applications and PC games, but later became more compatible with IBM PC compatibles. In 1993, the FM Towns Marty was released, a game console compatible with existing FM Towns games.
 

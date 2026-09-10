@@ -1,9 +1,26 @@
 <themeCapabilities>
   <themeName>ATLAS</themeName>
 
-  <!-- ATLAS currently supports 4:3 and 16:9 landscape layouts. -->
+  <!-- ATLAS v0.2.0 supports 4:3 and 16:9 landscape layouts. -->
   <aspectRatio>4:3</aspectRatio>
   <aspectRatio>16:9</aspectRatio>
+
+  <!-- Visual styling is now independent from the game browsing layout. -->
+  <colorScheme name="atlas-balanced">
+    <label>Balanced</label>
+  </colorScheme>
+  <colorScheme name="atlas-dark">
+    <label>Dark</label>
+  </colorScheme>
+  <colorScheme name="atlas-light">
+    <label>Light</label>
+  </colorScheme>
+  <colorScheme name="atlas-vibrant">
+    <label>Vibrant</label>
+  </colorScheme>
+  <colorScheme name="atlas-clean">
+    <label>Clean</label>
+  </colorScheme>
 
   <transitions name="atlas-smooth">
     <label>ATLAS Smooth</label>
@@ -21,28 +38,13 @@
     <entry>builtin-fade</entry>
   </suppressTransitionProfiles>
 
-  <variant name="atlas-balanced">
-    <label>Balanced</label>
+  <variant name="atlas-shelf">
+    <label>ATLAS Shelf</label>
     <selectable>true</selectable>
     <transitions>atlas-smooth</transitions>
   </variant>
-  <variant name="atlas-dark">
-    <label>Dark</label>
-    <selectable>true</selectable>
-    <transitions>atlas-smooth</transitions>
-  </variant>
-  <variant name="atlas-light">
-    <label>Light</label>
-    <selectable>true</selectable>
-    <transitions>atlas-smooth</transitions>
-  </variant>
-  <variant name="atlas-vibrant">
-    <label>Vibrant</label>
-    <selectable>true</selectable>
-    <transitions>atlas-smooth</transitions>
-  </variant>
-  <variant name="atlas-clean">
-    <label>Clean</label>
+  <variant name="atlas-grid">
+    <label>ATLAS Grid</label>
     <selectable>true</selectable>
     <transitions>atlas-smooth</transitions>
   </variant>

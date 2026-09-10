@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Ports</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>View and play all of your favorite game ports.</systemSummary>
         <systemDescription>View and play all of your favorite game ports.</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

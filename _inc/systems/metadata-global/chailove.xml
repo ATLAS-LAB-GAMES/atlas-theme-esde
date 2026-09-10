@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>ChaiLove Framework</systemName>
+        <gameSystemNameFontSize>0.0200</gameSystemNameFontSize>
         <systemSummary>ChaiLove is an awesome framework you can use to make 2D games in ChaiScript. It's free, open-source, and works on Windows, Mac OS X, Linux, Android, and ARM through libretro/RetroArch.</systemSummary>
         <systemDescription>ChaiLove is an awesome framework you can use to make 2D games in ChaiScript. It's free, open-source, and works on Windows, Mac OS X, Linux, Android, and ARM through libretro/RetroArch.</systemDescription>
         <systemManufacturer>ChaiLove Team</systemManufacturer>

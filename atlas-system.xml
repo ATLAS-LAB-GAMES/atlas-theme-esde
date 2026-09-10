@@ -138,6 +138,10 @@
       <pos>0.044 0.367</pos>
       <size>0.292 0.120</size>
       <text>${systemSummary}</text>
+      <container>true</container>
+      <containerType>vertical</containerType>
+      <containerStartDelay>5</containerStartDelay>
+      <containerResetDelay>7</containerResetDelay>
       <fontPath>${fontDisplay}</fontPath>
       <fontSize>0.0205</fontSize>
       <lineSpacing>1.20</lineSpacing>
@@ -150,7 +154,7 @@
     </gameselector>
     <image name="stat-games-icon">
       <origin>0 0.5</origin>
-      <pos>0.046 0.514</pos>
+      <pos>0.046 0.488</pos>
       <size>0.020 0.020</size>
       <path>./_inc/atlas/ui/stat-games.svg</path>
       <color>${mutedTextColor}</color>
@@ -158,7 +162,7 @@
     </image>
     <text name="stat-games-label">
       <origin>0 0.5</origin>
-      <pos>0.078 0.514</pos>
+      <pos>0.078 0.488</pos>
       <size>0.17 0.025</size>
       <text>GAMES</text>
       <fontPath>${fontDisplay}</fontPath>
@@ -168,7 +172,7 @@
     </text>
     <text name="stat-games-value">
       <origin>1 0.5</origin>
-      <pos>0.330 0.514</pos>
+      <pos>0.330 0.488</pos>
       <size>0.10 0.025</size>
       <systemdata>gamecountGamesNoText</systemdata>
       <fontPath>${fontDisplay}</fontPath>
@@ -179,7 +183,7 @@
     </text>
     <image name="stat-separator-1">
       <origin>0 0</origin>
-      <pos>0.044 0.535</pos>
+      <pos>0.044 0.509</pos>
       <size>0.286 0.0012</size>
       <path>./_inc/atlas/ui/solid.png</path>
       <color>${rowSeparatorColor}</color>
@@ -187,7 +191,7 @@
     </image>
     <image name="stat-favorites-icon">
       <origin>0 0.5</origin>
-      <pos>0.046 0.558</pos>
+      <pos>0.046 0.532</pos>
       <size>0.020 0.020</size>
       <path>./_inc/atlas/ui/stat-favorites.svg</path>
       <color>${mutedTextColor}</color>
@@ -195,7 +199,7 @@
     </image>
     <text name="stat-favorites-label">
       <origin>0 0.5</origin>
-      <pos>0.078 0.558</pos>
+      <pos>0.078 0.532</pos>
       <size>0.17 0.025</size>
       <text>FAVORITES</text>
       <fontPath>${fontDisplay}</fontPath>
@@ -205,7 +209,7 @@
     </text>
     <text name="stat-favorites-value">
       <origin>1 0.5</origin>
-      <pos>0.330 0.558</pos>
+      <pos>0.330 0.532</pos>
       <size>0.10 0.025</size>
       <systemdata>gamecountFavoritesNoText</systemdata>
       <fontPath>${fontDisplay}</fontPath>
@@ -216,7 +220,7 @@
     </text>
     <image name="stat-separator-2">
       <origin>0 0</origin>
-      <pos>0.044 0.579</pos>
+      <pos>0.044 0.553</pos>
       <size>0.286 0.0012</size>
       <path>./_inc/atlas/ui/solid.png</path>
       <color>${rowSeparatorColor}</color>
@@ -224,7 +228,7 @@
     </image>
     <image name="stat-last-icon">
       <origin>0 0.5</origin>
-      <pos>0.046 0.602</pos>
+      <pos>0.046 0.576</pos>
       <size>0.020 0.020</size>
       <path>./_inc/atlas/ui/stat-clock.svg</path>
       <color>${mutedTextColor}</color>
@@ -232,7 +236,7 @@
     </image>
     <text name="stat-last-label">
       <origin>0 0.5</origin>
-      <pos>0.078 0.602</pos>
+      <pos>0.078 0.576</pos>
       <size>0.17 0.025</size>
       <text>LAST PLAYED</text>
       <fontPath>${fontDisplay}</fontPath>
@@ -242,7 +246,7 @@
     </text>
     <datetime name="stat-last-value">
       <origin>1 0.5</origin>
-      <pos>0.330 0.602</pos>
+      <pos>0.330 0.576</pos>
       <size>0.14 0.025</size>
       <metadata>lastplayed</metadata>
       <gameselector>lastplayed-selector</gameselector>
@@ -256,7 +260,7 @@
     </datetime>
     <image name="stat-separator-3">
       <origin>0 0</origin>
-      <pos>0.044 0.623</pos>
+      <pos>0.044 0.597</pos>
       <size>0.286 0.0012</size>
       <path>./_inc/atlas/ui/solid.png</path>
       <color>${rowSeparatorColor}</color>
@@ -264,7 +268,7 @@
     </image>
     <image name="stat-progress-icon">
       <origin>0 0.5</origin>
-      <pos>0.046 0.646</pos>
+      <pos>0.046 0.620</pos>
       <size>0.020 0.020</size>
       <path>./_inc/atlas/ui/stat-system.svg</path>
       <color>${mutedTextColor}</color>
@@ -272,7 +276,7 @@
     </image>
     <text name="stat-progress-label">
       <origin>0 0.5</origin>
-      <pos>0.078 0.646</pos>
+      <pos>0.078 0.620</pos>
       <size>0.19 0.025</size>
       <text>COLLECTION PROGRESS</text>
       <fontPath>${fontDisplay}</fontPath>
@@ -282,7 +286,7 @@
     </text>
     <text name="stat-progress-value">
       <origin>1 0.5</origin>
-      <pos>0.330 0.646</pos>
+      <pos>0.330 0.620</pos>
       <size>0.10 0.025</size>
       <text>${systemCollectionProgress}</text>
       <fontPath>${fontDisplay}</fontPath>
@@ -293,7 +297,7 @@
     </text>
     <image name="accent-track">
       <origin>0 0</origin>
-      <pos>0.044 0.684</pos>
+      <pos>0.044 0.658</pos>
       <size>0.286 0.007</size>
       <path>./_inc/atlas/ui/solid.png</path>
       <color>${trackColor}</color>
@@ -302,10 +306,11 @@
     </image>
     <image name="accent-fill">
       <origin>0 0</origin>
-      <pos>0.044 0.684</pos>
-      <size>0.205 0.007</size>
+      <pos>0.044 0.658</pos>
+      <size>${systemCollectionProgressFill} 0.007</size>
       <path>./_inc/atlas/ui/solid.png</path>
       <color>${accentColor}</color>
+      <opacity>${systemCollectionProgressOpacity}</opacity>
       <cornerRadius>0.006</cornerRadius>
       <zIndex>10</zIndex>
     </image>
@@ -315,6 +320,7 @@
       <size>1 0.190</size>
       <path>./_inc/atlas/ui/carousel-fill.png</path>
       <color>${cardFillColor}</color>
+      <opacity>0.72</opacity>
       <zIndex>10</zIndex>
     </image>
     <image name="carousel-border">
@@ -351,18 +357,18 @@
     </image>
     <carousel name="systemcarousel">
       <origin>0.5 0</origin>
-      <pos>0.5 0.746</pos>
+      <pos>0.5007 0.7360</pos>
       <size>0.968 0.145</size>
       <type>horizontal</type>
       <maxItemCount>7</maxItemCount>
-      <itemSize>0.119 0.104</itemSize>
+      <itemSize>0.125 0.125</itemSize>
       <itemScale>1.045</itemScale>
       <staticImage>./_inc/systems/logos-atlas/${system.theme}.png</staticImage>
       <defaultImage>./_inc/systems/logos-atlas/_default.png</defaultImage>
-      <imageFit>contain</imageFit>
+      <imageFit>fill</imageFit>
       <itemVerticalAlignment>center</itemVerticalAlignment>
       <verticalOffset>0</verticalOffset>
-      <selectedItemMargins>0.004 0.004</selectedItemMargins>
+      <selectedItemMargins>0.003 0.003</selectedItemMargins>
       <selectedItemOffset>0 0</selectedItemOffset>
       <unfocusedItemOpacity>${unfocusedOpacity}</unfocusedItemOpacity>
       <unfocusedItemSaturation>${unfocusedSaturation}</unfocusedItemSaturation>

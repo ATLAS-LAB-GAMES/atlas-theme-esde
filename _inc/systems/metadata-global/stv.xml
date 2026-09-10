@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>ST-V</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>ST-V (Sega Titan Video) is an arcade system board released by Sega, in 1994 for Japan and 1995 worldwide.</systemSummary>
         <systemDescription>ST-V (Sega Titan Video) is an arcade system board released by Sega, in 1994 for Japan and 1995 worldwide. Departing from their usual process of building custom arcade hardware, Sega's ST-V is essentially identical to the Sega Saturn home console system. The only difference is the media; ST-V used ROM cartridges instead of CD-ROM discs to store games, with the exception of Sports Fishing 2. Being derived from the Saturn hardware, the ST-V was presumably named after the moon Titan, a satellite of Saturn.
 

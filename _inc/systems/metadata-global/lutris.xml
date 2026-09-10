@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Lutris</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>Lutris is a free and open source game manager for Linux-based operating systems developed and maintained by Mathieu Comandon and the community, released under the GNU General Public License.</systemSummary>
         <systemDescription>Lutris is a free and open source game manager for Linux-based operating systems developed and maintained by Mathieu Comandon and the community, released under the GNU General Public License.
 

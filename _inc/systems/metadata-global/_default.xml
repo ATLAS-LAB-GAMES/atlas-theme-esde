@@ -1,8 +1,11 @@
 <theme>
     <variables>
         <systemName>${system.fullName}</systemName>
+        <gameSystemNameFontSize>0.0380</gameSystemNameFontSize>
         <systemSummary>Explore and play games for ${system.fullName}.</systemSummary>
         <systemCollectionProgress>—</systemCollectionProgress>
+        <systemCollectionProgressFill>0.001</systemCollectionProgressFill>
+        <systemCollectionProgressOpacity>0</systemCollectionProgressOpacity>
         <systemDescription>View and play the ${system.fullName}</systemDescription>
         <systemManufacturer></systemManufacturer>
         <systemReleaseYear></systemReleaseYear>

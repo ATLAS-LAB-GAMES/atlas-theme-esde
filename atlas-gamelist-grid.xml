@@ -1,0 +1,36 @@
+<theme>
+  <include>./atlas-gamelist-common.xml</include>
+  <view name="gamelist">
+    <grid name="game-grid">
+      <origin>0 0</origin>
+      <pos>0.025 0.545</pos>
+      <size>0.950 0.365</size>
+      <imageType>3dbox</imageType>
+      <itemSize>0.170 0.160</itemSize>
+      <itemScale>1.25</itemScale>
+      <itemSpacing>0.055 0.020</itemSpacing>
+      <scaleInwards>true</scaleInwards>
+      <fractionalRows>true</fractionalRows>
+      <itemTransitions>animate</itemTransitions>
+      <rowTransitions>animate</rowTransitions>
+      <unfocusedItemOpacity>${unfocusedOpacity}</unfocusedItemOpacity>
+      <unfocusedItemSaturation>${unfocusedSaturation}</unfocusedItemSaturation>
+      <unfocusedItemDimming>${unfocusedDimming}</unfocusedItemDimming>
+      <imageFit>contain</imageFit>
+      <imageInterpolation>linear</imageInterpolation>
+      <imageRelativeScale>0.96</imageRelativeScale>
+      <selectorRelativeScale>1.0</selectorRelativeScale>
+      <selectorLayer>bottom</selectorLayer>
+      <selectorCornerRadius>0.010</selectorCornerRadius>
+      <selectorColor>00000000</selectorColor>
+      <textRelativeScale>0.76</textRelativeScale>
+      <textColor>${mutedTextColor}</textColor>
+      <textSelectedColor>${titleColor}</textSelectedColor>
+      <textBackgroundColor>00000000</textBackgroundColor>
+      <textSelectedBackgroundColor>00000000</textSelectedBackgroundColor>
+      <fontPath>${fontDisplay}</fontPath>
+      <fontSize>0.014</fontSize>
+      <zIndex>20</zIndex>
+    </grid>
+  </view>
+</theme>

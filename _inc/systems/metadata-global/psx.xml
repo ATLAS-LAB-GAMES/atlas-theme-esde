@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>PlayStation</systemName>
+        <gameSystemNameFontSize>0.0340</gameSystemNameFontSize>
         <systemSummary>The original PlayStation changed everything. A revolutionary 32-bit console that brought 3D gaming to the world and defined a generation.</systemSummary>
         <systemDescription>The Sony PlayStation, or PS for short, is a fifth generation (1993–2005) home video game console developed and distributed by Sony Interactive Entertainment. It was released on December 3, 1994 in Japan at a retail price of ¥37,000. The console was later released in North America (1995), Europe (1995), Australia (1995), and Korea (1996). The PlayStation was known for standardizing disc based games over cartridges, as well as controllers with two analog sticks and vibration feedback. The console was discontinued on March 23, 2006.
 

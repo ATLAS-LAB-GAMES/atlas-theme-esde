@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Tools</systemName>
+        <gameSystemNameFontSize>0.0460</gameSystemNameFontSize>
         <systemSummary>Programs, scripts and utilities to manage your set up.</systemSummary>
         <systemDescription>Programs, scripts and utilities to manage your set up.</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

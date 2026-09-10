@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>FinalBurn Alpha</systemName>
+        <gameSystemNameFontSize>0.0240</gameSystemNameFontSize>
         <systemSummary>This source-available project is based on FinalBurn, created by Dave in 2000.</systemSummary>
         <systemDescription>This source-available project is based on FinalBurn, created by Dave in 2000. It has been programmed by a team composed of Barry Harris (Old username: TrebleWinner), Jan_Klaassen, KEV, LoopMaster, Mike Haggar, Hyper Yagami and Ayeye.
 

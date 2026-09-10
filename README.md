@@ -1,172 +1,80 @@
 # ATLAS Theme for ES-DE
 
-**Version 0.1.0**
+**Version 0.2.0 — Test Build 5**
 
-ATLAS is a console-focused theme for [ES-DE](https://es-de.org/) designed around cinematic system artwork, a compact console-style information layout, and a consistent visual identity across classic and modern gaming platforms.
+ATLAS is a console-focused ES-DE theme built around cinematic system artwork, a compact information layout, 3D-box library browsing, and a consistent ATLAS visual identity.
 
-This is the first public release of the ATLAS ES-DE theme from **ATLAS-LAB-GAMES**.
+Test Build 5 uses the **RG476H-validated Test Build 4** as its functional baseline. Core Shelf/Grid layout XML and the proven Test Build 4 carousel/video behavior are retained. This build focuses on artwork normalization/completeness and hardening the two manual companion tools.
 
-## Features
+## Theme modes
 
-- Five selectable visual variants:
-  - **Balanced** — moderate contrast with restrained emerald lighting
-  - **Dark** — deep blacks, cinematic shadows, and stronger green highlights
-  - **Light** — bright silver-white styling with softer depth
-  - **Vibrant** — higher saturation with stronger teal and emerald energy
-  - **Clean** — minimal white and pale-grey presentation
-- Dedicated **4:3** layout, with handheld devices such as the Anbernic RG476H as a primary design target
-- **16:9** landscape support
-- Full-screen, system-specific ATLAS artwork
-- Metallic system titles and ATLAS system branding
-- Seven-item system carousel
-- System information panel with:
-  - game count
-  - favorite count
-  - last-played date
-  - collection-progress field
-- ATLAS-styled gamelist with 3D box-art carousel
-- Video and fan-art/screenshot support
-- Native ES-DE metadata indicators for favorites, playtime, completion, manuals, rating, and broken status
-- Optional per-game RetroAchievements indicator overrides
-- Dedicated artwork and metadata for supported ATLAS custom collections
-- ATLAS transition profile with fade transitions between system and gamelist views
+- **Theme Variant:** ATLAS Shelf / ATLAS Grid
+- **Theme Color Scheme:** Balanced / Dark / Light / Vibrant / Clean
+- **Aspect Ratio:** 4:3 / 16:9
 
-## Supported aspect ratios
+## Test Build 5 changes
 
-ATLAS currently supports:
-
-- **4:3** — primary ATLAS layout
-- **16:9** — widescreen landscape layout
-
-The layout can be selected through ES-DE's theme settings when automatic aspect-ratio selection does not choose the desired mode.
-
-## Installation
-
-### Release download
-
-1. Download the latest ATLAS ES-DE theme release from this repository.
-2. Extract the release archive.
-3. Copy the extracted theme folder into your ES-DE themes directory.
-4. Start or restart ES-DE.
-5. Open **UI Settings → Theme**.
-6. Select **ATLAS**.
-7. Select the desired theme variant:
-   - Balanced
-   - Dark
-   - Light
-   - Vibrant
-   - Clean
-
-Keep the complete directory structure intact. The `_inc` directory contains required artwork, fonts, metadata, logos, icons, and supporting XML files.
-
-### Git installation
-
-The repository can also be cloned directly into your ES-DE themes directory:
-
-```bash
-git clone https://github.com/ATLAS-LAB-GAMES/atlas-theme-esde.git
-```
-
-To update a cloned copy later:
-
-```bash
-git pull
-```
-
-## Repository structure
-
-```text
-atlas-theme-esde/
-├── _inc/
-│   ├── atlas/
-│   ├── fonts/
-│   └── systems/
-├── Digimon Collection/
-├── EA Sports Collection/
-├── Final Fantasy Collection/
-├── Hogwarts Collection/
-├── Jurassic Park Collection/
-├── Mario Collection/
-├── Middle Earth Collection/
-├── Pokemon Collection/
-├── Sonic Collection/
-├── Yu-Gi-Oh Collection/
-├── Zelda Collection/
-├── completed/
-├── now-playing/
-├── aspect-ratio-16-9.xml
-├── aspect-ratio-4-3.xml
-├── atlas-gamelist.xml
-├── atlas-system.xml
-├── capabilities.xml
-├── theme.xml
-├── README.md
-├── ATLAS-METADATA-NOTES.md
-└── COLLECTIONS-SETUP.md
-```
+- Corrected all 23 newly replaced carousel cards to the Test Build 4 contract: **480×360, actual PNG encoding, full-canvas geometry**.
+- Added complete theme support for:
+  - Crash Bandicoot Collection
+  - Spyro the Dragon Collection
+  - Pokemon Hacks Collection
+  - Emulators Collection
+- Added ATLAS variant backgrounds for active RG476H systems that previously relied only on base modern artwork: C64, GB, GBA, GBC, GameCube, Mega CD, 3DS, N64, NDS, NES, Pokemon Mini, SNES, Switch, Virtual Boy, Wii and Wii U.
+- Added an experimental `_inc/systems/logos-atlas-alt/` folder for optional future carousel-card customization.
+- Hardened the manual Game Emblem Tool, including hash-safe restore behavior and support for ES-DE gamelists that contain a top-level `alternativeEmulator` block.
+- Reworked Collection Progress so it handles those ES-DE gamelists and can aggregate custom collections across source systems when given the ES-DE `collections` directory.
+- Collection Progress now stores an informational JSON snapshot in `tools/progress/state/progress.json` when applied.
+- Updated static validation for the Test Build 4 carousel geometry, actual PNG encoding, the four new collection asset contracts and companion-tool tests.
+- Removed obsolete Test Build 3/4 report artifacts and the no-longer-needed in-package v0.1 carousel backup directory. Historical source remains recoverable from Git/Test Build archives.
 
 ## Custom collections
 
-ATLAS currently includes dedicated theme support for:
+See [`COLLECTIONS-SETUP.md`](COLLECTIONS-SETUP.md). For individually themed collections, use:
 
-- Digimon Collection
-- EA Sports Collection
-- Final Fantasy Collection
-- Hogwarts Collection
-- Jurassic Park Collection
-- Mario Collection
-- Middle Earth Collection
-- Pokemon Collection
-- Sonic Collection
-- Yu-Gi-Oh Collection
-- Zelda Collection
+**Main Menu → Game Collection Settings → Group custom collections → Never**
 
-See [COLLECTIONS-SETUP.md](COLLECTIONS-SETUP.md) for configuration instructions.
+and create supported collections using **Create new custom collection from theme**.
 
-## Metadata
+## Game Emblem Tool
 
-ATLAS uses ES-DE's native metadata where possible and supplements it with ATLAS-specific system metadata and optional per-game overrides.
+`tools/emblems/atlas-emblems.py` manually decorates scraped artwork with:
 
-See [ATLAS-METADATA-NOTES.md](ATLAS-METADATA-NOTES.md) for details.
+- Hack
+- Mod
+- Fan Game
+- Disc 1–6
 
-## Collection progress
+It maintains pristine SHA-256 tracked backups and refuses to overwrite externally changed media. Always use `--dry-run` first. See [`tools/emblems/README.md`](tools/emblems/README.md).
 
-ES-DE does not currently expose a live system-level completion percentage to themes.
+## Collection Progress
 
-ATLAS therefore provides the variable:
+`tools/progress/atlas-progress.py` manually calculates played/total percentages from ES-DE gamelists. Test Build 5 also supports ES-DE custom collection configuration files. See [`tools/progress/README.md`](tools/progress/README.md).
 
-```text
-${systemCollectionProgress}
+## Carousel artwork contract
+
+Active files in `_inc/systems/logos-atlas/` must be:
+
+- 480×360
+- actual PNG files
+- full-canvas card geometry
+
+Do not add `imageRelativeScale` to the `systemcarousel`; that property caused the RG476H black-screen failure during Test Build 3 testing.
+
+## Testing
+
+Run:
+
+```bash
+python3 tools/validate-v020.py
+python3 tools/logos/atlas-logo-audit.py
+python3 tools/emblems/tests/test_atlas_emblems.py
+python3 tools/progress/tests/test_atlas_progress.py
 ```
 
-It defaults to an em dash (`—`) unless a value is supplied through the system metadata configuration.
-
-## Compatibility and project status
-
-Version **0.1.0** is the first public ATLAS ES-DE release.
-
-The theme is intended for ES-DE 3.x and uses the current ES-DE theme capability, metadata, badge, carousel, and game-override mechanisms used during ATLAS development.
-
-Because ATLAS contains a large amount of system-specific artwork, the repository and release archive are substantially larger than a typical text-only ES-DE theme.
-
-## Credits
-
-ATLAS was developed using the structure of the **Elementerial ES-DE port**, which is based on the original Elementerial theme by **mluizvitor**.
-
-The included system metadata set incorporates third-party metadata work distributed under Creative Commons Attribution-NonCommercial-ShareAlike terms. Some metadata was derived from sources including Wikipedia, LaunchBox, ScreenScraper, and prior community theme projects.
-
-Included fonts and third-party assets retain their respective licenses.
-
-Platform names, logos, game characters, artwork, and trademarks remain the property of their respective owners.
-
-ATLAS is a non-commercial fan project intended for personal game-library organization and preservation.
-
-## License
-
-The ATLAS theme is distributed under **Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)** terms, subject to the separate rights and licenses that apply to included third-party assets.
+Then work through [`V020-TEST-CHECKLIST.md`](V020-TEST-CHECKLIST.md) on the RG476H.
 
 ## Project
 
-**ATLAS-LAB-GAMES**
-
-Find your game. Play your way.
+**ATLAS-LAB-GAMES**  
+**Find your game. Play your way.**

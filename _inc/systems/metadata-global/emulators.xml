@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Emulators</systemName>
+        <gameSystemNameFontSize>0.0400</gameSystemNameFontSize>
         <systemSummary>Modify your Emulator settings and configurations</systemSummary>
         <systemDescription>Modify your Emulator settings and configurations</systemDescription>
         <systemManufacturer>Various</systemManufacturer>

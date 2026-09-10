@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>Game &amp; Watch</systemName>
+        <gameSystemNameFontSize>0.0220</gameSystemNameFontSize>
         <systemSummary>The Game &amp; Watch brand is a series of handheld electronic games developed, manufactured, released and marketed by Nintendo from 1980 to 1991.</systemSummary>
         <systemDescription>The Game &amp; Watch brand is a series of handheld electronic games developed, manufactured, released and marketed by Nintendo from 1980 to 1991. Created by game designer Gunpei Yokoi, the product derived its name from its featuring a single game as well as a clock on a LCD screen. The models from 1981 onwards featured an alarm in addition. It was the earliest Nintendo video game product to gain major success.
 

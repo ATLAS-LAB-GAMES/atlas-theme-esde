@@ -1,0 +1,4 @@
+SYSTEM,GAME,IMAGE_TYPE,EMBLEM_TYPE,ACTION,POSITION
+n64,"Super Smash Bros [Hack v1.2]",3dbox,hack,add,top-right
+psx,"Final Fantasy VII (Disc 2)",3dbox,disc2,add,top-right
+gba,"Pokemon Unbound",3dbox,fangame,add,top-right

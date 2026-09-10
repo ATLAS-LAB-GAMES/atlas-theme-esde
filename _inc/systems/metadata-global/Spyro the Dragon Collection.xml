@@ -1,0 +1,15 @@
+<theme>
+  <variables>
+    <systemName>Spyro the Dragon Collection</systemName>
+    <gameSystemNameFontSize>0.0185</gameSystemNameFontSize>
+    <systemSummary>A curated library of Spyro adventures, platformers and dragon-filled journeys across generations.</systemSummary>
+    <systemDescription>A curated library of Spyro adventures, platformers and dragon-filled journeys across generations.</systemDescription>
+    <systemManufacturer>ATLAS Collection</systemManufacturer>
+    <systemReleaseYear>CURATED</systemReleaseYear>
+    <systemHardwareType>Collection</systemHardwareType>
+    <systemCoverSize>1-1</systemCoverSize>
+    <systemColor>7039A6</systemColor>
+    <systemColorPalette1>E9892F</systemColorPalette1>
+    <modernCropPos>0.5</modernCropPos>
+  </variables>
+</theme>

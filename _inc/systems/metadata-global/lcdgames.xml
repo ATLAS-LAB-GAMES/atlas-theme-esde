@@ -1,6 +1,7 @@
 <theme>
     <variables>
         <systemName>LCD Games</systemName>
+        <gameSystemNameFontSize>0.0420</gameSystemNameFontSize>
         <systemSummary>Handheld electronic games are very small, portable devices for playing interactive electronic games, often miniaturized versions of video games.</systemSummary>
         <systemDescription>Handheld electronic games are very small, portable devices for playing interactive electronic games, often miniaturized versions of video games. The controls, display and speakers are all part of a single unit.
 
