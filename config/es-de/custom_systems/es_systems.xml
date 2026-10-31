@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Adds ONE separate ES-DE system with 11 Gen1Recomp Android launch shortcuts. -->
+<!-- Merge the <system> entry into your existing custom file; do not overwrite your customizations. -->
+<systemList>
+    <system>
+        <name>pokemonrecomp</name>
+        <fullname>Pokémon Recomp</fullname>
+        <path>%ROMPATH%/pokemonrecomp</path>
+        <extension>.recomp .RECOMP</extension>
+        <command label="Gen1Recomp Deluxe (Android)">%EMULATOR_GEN1RECOMP% %ACTION%=android.intent.action.VIEW %DATA%=%INJECT%=%ROM%</command>
+        <platform>gb gbc gba</platform>
+        <theme>pokemonrecomp</theme>
+    </system>
+</systemList>
