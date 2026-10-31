@@ -6,3 +6,11 @@ ehthumbs.db
 
 # Optional local overrides
 /theme-customizations/
+
+# Device-specific ES-DE configuration
+/config/es-de/
+
+# Local troubleshooting files
+/backups/
+/es_systems-pokemonrecomp.xml
+/pokemonred-launch.log
