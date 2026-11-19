@@ -1,4 +1,108 @@
 SYSTEM,GAME,IMAGE_TYPE,EMBLEM_TYPE,ACTION,POSITION
-n64,"Super Smash Bros [Hack v1.2]",3dbox,hack,add,top-right
-psx,"Final Fantasy VII (Disc 2)",3dbox,disc2,add,top-right
-gba,"Pokemon Unbound",3dbox,fangame,add,top-right
+atarist,"Secret of Monkey Island, The (1991)(LucasFilm Games)(de)(Disk 3 of 4)[cr MCA]",3dbox,disc3,add,top-right
+c64,Fellowship of the Rings (19xx)(Beam Software)(Side A),3dbox,disc1,add,top-right
+c64,Fellowship of the Rings (19xx)(Beam Software)(Side B),3dbox,disc2,add,top-right
+c64,"Hobbit, The (1983)(Melbourne House)(Side A)",3dbox,disc1,add,top-right
+c64,"Hobbit, The (1983)(Melbourne House)(Side B)",3dbox,disc2,add,top-right
+c64,War in Middle Earth (1989)(Melbourne House)(Side A),3dbox,disc1,add,top-right
+c64,War in Middle Earth (1989)(Melbourne House)(Side B),3dbox,disc2,add,top-right
+cdimono1,"7th Guest, The (USA) (Disc 1) (The Game)",3dbox,disc1,add,top-right
+cdimono1,"Burn-Cycle (USA, Europe) (Disc 1) (The Game)",3dbox,disc1,add,top-right
+dreamcast,Shenmue (USA) (Disc 1),3dbox,disc1,add,top-right
+dreamcast,Shenmue (USA) (Disc 2),3dbox,disc2,add,top-right
+dreamcast,Shenmue (USA) (Disc 3),3dbox,disc3,add,top-right
+gb,Pokemon Anniversary Red (patched),3dbox,hack,add,top-right
+gb,Pokemon Brown (patched),3dbox,hack,add,top-right
+gb,Pokemon Red ++,3dbox,hack,add,top-right
+gba,Pokemon - Emerald Seaglass,3dbox,hack,add,top-right
+gba,Pokemon Clover,3dbox,hack,add,top-right
+gba,Pokemon Crown,3dbox,hack,add,top-right
+gba,Pokemon Dark Rising,3dbox,hack,add,top-right
+gba,Pokemon Dark Rising 2,3dbox,hack,add,top-right
+gba,Pokemon Dark Violet,3dbox,hack,add,top-right
+gba,Pokemon DarkFire,3dbox,hack,add,top-right
+gba,Pokemon Digimon Emerald,3dbox,hack,add,top-right
+gba,Pokemon Emerald Rogue Version,3dbox,hack,add,top-right
+gba,Pokemon Emerald Seaglass,3dbox,hack,add,top-right
+gba,Pokemon FireRed Rocket Edition,3dbox,hack,add,top-right
+gba,Pokemon Flora Sky,3dbox,hack,add,top-right
+gba,Pokemon Gaia (patched),3dbox,hack,add,top-right
+gba,Pokemon Glazed,3dbox,hack,add,top-right
+gba,Pokemon GS Chronicles,3dbox,hack,add,top-right
+gba,Pokemon Light Platinum,3dbox,hack,add,top-right
+gba,Pokemon Mega Emerald X and Y,3dbox,hack,add,top-right
+gba,Pokemon Odessy (patched),3dbox,hack,add,top-right
+gba,Pokemon Radical Red,3dbox,hack,add,top-right
+gba,Pokemon Recharged Yellow,3dbox,hack,add,top-right
+gba,Pokemon Scorched SIlver,3dbox,hack,add,top-right
+gba,Pokemon Shiny Gold Sigma,3dbox,hack,add,top-right
+gba,Pokemon Sienna,3dbox,hack,add,top-right
+gba,Pokemon Snakewood,3dbox,hack,add,top-right
+gba,Pokemon Sun Sky,3dbox,hack,add,top-right
+gba,Pokemon Sword and Shield Ultimate,3dbox,hack,add,top-right
+gba,Pokemon Ultra Shiny Gold Sigma,3dbox,hack,add,top-right
+gba,Pokemon Ultra Violet v1.22,3dbox,hack,add,top-right
+gba,Pokemon Unbound v2.1.1.1,3dbox,hack,add,top-right
+gbc,Pokemon Anniversary Crystal (patched),3dbox,hack,add,top-right
+gbc,Pokemon Bronze,3dbox,hack,add,top-right
+gbc,Pokemon BW Genesis,3dbox,hack,add,top-right
+gbc,Pokemon Crystal Clear,3dbox,hack,add,top-right
+gbc,Pokemon Orange,3dbox,hack,add,top-right
+gbc,Pokemon Polished Crystal,3dbox,hack,add,top-right
+gbc,Pokemon Prism (patched),3dbox,hack,add,top-right
+gbc,Pokemon Pyrite,3dbox,hack,add,top-right
+gbc,Pokemon Super Gold 97,3dbox,hack,add,top-right
+gbc,Pokemon Yellow Legacy,3dbox,hack,add,top-right
+gbc,Pokemon_PureGreen_v2.7.0,3dbox,hack,add,top-right
+gc,GoldenEye - Rogue Agent (USA) (Disc 1),3dbox,disc1,add,top-right
+gc,GoldenEye - Rogue Agent (USA) (Disc 2),3dbox,disc2,add,top-right
+gc,"Lord of the Rings, The - The Third Age (USA) (Disc 1)",3dbox,disc1,add,top-right
+gc,"Lord of the Rings, The - The Third Age (USA) (Disc 2)",3dbox,disc2,add,top-right
+megacd,Night Trap (USA) (Disc 1),3dbox,disc1,add,top-right
+ps2,Devil May Cry 2 (USA) (Disc 1),3dbox,disc1,add,top-right
+ps2,Devil May Cry 2 (USA) (Disc 2),3dbox,disc2,add,top-right
+ps2,Grandia III (USA) (Disc 1),3dbox,disc1,add,top-right
+ps2,Grandia III (USA) (Disc 2),3dbox,disc2,add,top-right
+ps2,Shadow Hearts - Covenant (USA) (Disc 1),3dbox,disc1,add,top-right
+ps2,Shadow Hearts - Covenant (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Atlantis - The Lost Tales (Europe) (Disc 1),3dbox,disc1,add,top-right
+psx,Atlantis - The Lost Tales (Europe) (Disc 2),3dbox,disc2,add,top-right
+psx,Atlantis - The Lost Tales (Europe) (Disc 3),3dbox,disc3,add,top-right
+psx,Dragon Valor (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Dragon Valor (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Dragon Warrior VII (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Dragon Warrior VII (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Final Fantasy IX (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Final Fantasy IX (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Final Fantasy IX (USA) (Disc 3),3dbox,disc3,add,top-right
+psx,Final Fantasy IX (USA) (Disc 4),3dbox,disc4,add,top-right
+psx,Final Fantasy VII (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Final Fantasy VII (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Final Fantasy VII (USA) (Disc 3),3dbox,disc3,add,top-right
+psx,Final Fantasy VIII (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Final Fantasy VIII (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Final Fantasy VIII (USA) (Disc 3),3dbox,disc3,add,top-right
+psx,Final Fantasy VIII (USA) (Disc 4),3dbox,disc4,add,top-right
+psx,"Legend of Dragoon, The (USA, Canada) (Disc 1)",3dbox,disc1,add,top-right
+psx,"Legend of Dragoon, The (USA, Canada) (Disc 2)",3dbox,disc2,add,top-right
+psx,"Legend of Dragoon, The (USA, Canada) (Disc 3)",3dbox,disc3,add,top-right
+psx,"Legend of Dragoon, The (USA, Canada) (Disc 4)",3dbox,disc4,add,top-right
+psx,Metal Gear Solid (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Metal Gear Solid (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Oddworld - Abe's Exoddus (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Oddworld - Abe's Exoddus (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Parasite Eve (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Parasite Eve (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,"Parasite Eve II (USA, Canada) (Disc 1)",3dbox,disc1,add,top-right
+psx,"Parasite Eve II (USA, Canada) (Disc 2)",3dbox,disc2,add,top-right
+psx,Resident Evil 2 (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Resident Evil 2 (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Star Wars - Rebel Assault II - The Hidden Empire (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Star Wars - Rebel Assault II - The Hidden Empire (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Syphon Filter 2 (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Syphon Filter 2 (USA) (Disc 2),3dbox,disc2,add,top-right
+psx,Xenogears (USA) (Disc 1),3dbox,disc1,add,top-right
+psx,Xenogears (USA) (Disc 2),3dbox,disc2,add,top-right
+saturn,"Atlantis - The Lost Tales (Europe) (En,De,Es) (Disc 1)",3dbox,disc1,add,top-right
+saturn,"Atlantis - The Lost Tales (Europe) (En,De,Es) (Disc 2)",3dbox,disc2,add,top-right
+saturn,Panzer Dragoon Saga (USA) (Disc 1),3dbox,disc1,add,top-right
